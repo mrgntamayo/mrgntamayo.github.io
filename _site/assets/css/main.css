@@ -1,0 +1,131 @@
+body {
+  color: #000;
+  background-color: #B94F74;
+  font-family: "PT Mono", monospace;
+  line-height: 1.25;
+  font-size: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Mono", monospace;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -1px; }
+
+a {
+  color: #000; }
+
+a:hover {
+  color: #000; }
+
+.wrapper {
+  max-width: -webkit-calc(800px - (50px * 2));
+  max-width: calc(800px - (50px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  border-right: 2px solid black;
+  border-left: 2px solid black; }
+
+::selection {
+  background: #ece8f4;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #ece8f4;
+  /* Gecko Browsers */ }
+
+.degree p {
+  font-size: 80%;
+  text-indent: .5em;
+  line-height: .9; }
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0; }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 0;
+  margin: 0; }
+
+.bibliography {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  list-style-type: none;
+  margin-left: 2px;
+  padding-left: 2px; }
+  .bibliography li {
+    margin: 2px 0;
+    position: relative;
+    padding: 2.5; }
+
+footer {
+  border-top: 2px solid #000; }
+
+.creative-commons {
+  text-decoration: none;
+  color: #000; }
+
+.logo {
+  background-color: #B94F74;
+  color: #ece8f4;
+  overflow: hidden;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: "PT Mono", monospace;
+  display: block; }
+  .logo a {
+    text-decoration: none;
+    color: #000; }
+  .logo h1,
+  .logo h2,
+  .logo h3,
+  .logo h4,
+  .logo h5,
+  .logo h6 {
+    margin-top: .5em;
+    margin-bottom: .5em; }
+
+.topnav {
+  background-color: #B94F74;
+  overflow: hidden;
+  text-align: left;
+  font-family: "PT Mono", monospace;
+  border-bottom: 2px solid #000;
+  line-height: 1.5;
+  /* Add a color to the active/current link */ }
+  .topnav .active {
+    font-weight: bold; }
+  .topnav .title {
+    font-weight: 700; }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #000;
+  text-align: left;
+  padding: 4px 6px;
+  font-size: 17px;
+  text-decoration: none; }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #000;
+  color: #B94F74; }
