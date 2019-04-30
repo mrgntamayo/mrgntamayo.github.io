@@ -1,0 +1,5 @@
+<div class="topnav">
+  <a {% if page.url == '/' %} class="active title" {% else %} class="title" {% endif %} href="{{ site.url }}{{ site.baseurl }}">{{ site.title | upcase }}</a>
+  <a {% if page.url == '/contact/' %} class="active"{% endif %} href="{{ site.url }}{{ site.baseurl }}/contact/">CONTACT</a>
+  <a href="https://www.patreon.com/{{ site.patreon }}">BLOG</a>
+</div>

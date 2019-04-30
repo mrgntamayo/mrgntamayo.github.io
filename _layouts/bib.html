@@ -1,0 +1,76 @@
+---
+---
+
+{% if entry.abbr %}
+  {% if site.data.venues[entry.abbr] %}
+    <abbr>[<a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a>]</abbr>
+  {% else %}
+    <abbr>[{{entry.abbr}}]</abbr>
+  {% endif %}
+{% endif %}
+
+<div id="{{entry.key}}">
+  {% if entry.type == "thesisd" %}
+    {{reference}}
+  {% else %}
+    <span class="title">{{entry.title}}.</span>
+    <span class="author">
+      {% for author in entry.author_array %}
+        {% unless forloop.last %}
+          {% if author.last == site.scholar.last_name %}
+            <em>{{author.last}}, {{author.first}}</em>,
+          {% else %}
+            {% if site.data.coauthors[author.last] %}
+              <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
+            {% else %}
+              {{author.last}}, {{author.first}};
+            {% endif %}
+          {% endif %}
+        {% else %}
+          {% if author.last == site.scholar.last_name %}
+            {% if entry.author_array.size == 1 %}
+            {% else %}
+              <em>{{author.last}}, {{author.first}}</em>.
+            {% endif %}
+          {% else %}
+            {% if site.data.coauthors[author.last] %}
+              <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>.
+            {% else %}
+              {{author.last}}, {{author.first}}
+            {% endif %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </span>
+
+    <span class="periodical">
+    {% if entry.type == "article" %}
+      <em>{{entry.journal}}</em>.
+    {% elsif entry.type == "inproceedings" %}
+      <em>{{entry.eventtitle}}</em>.
+    {% endif %}
+    {% if entry.date %}
+      {{entry.date | date: '%B %-d, %Y'}}.
+    {% endif %}
+    </span>
+  {% endif %}
+
+  {% if entry.type == "thesis" %}
+    <span class="periodical">
+      Advisor: {{entry.advisor}}.
+    </span>
+    <span class="periodical">
+      Committee: {{entry.committee}}.
+    </span>
+  {% endif %}
+
+    <span class="periodical">
+    {% if entry.type == "article" %}
+      {{entry.publisher}}.
+    {% elsif entry.type == "thesis" %}
+    {% elsif entry.type == "inproceedings" %}
+      {{entry.location}}.
+    {% endif %}
+    </span>
+    <hr>
+</div>
