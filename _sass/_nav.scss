@@ -49,7 +49,6 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: $secondary-color;
+  background-color: $text-color;
   color: $background-color;
-  font-weight: normal;
 }

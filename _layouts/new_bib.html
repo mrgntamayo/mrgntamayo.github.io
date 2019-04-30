@@ -1,0 +1,19 @@
+<li>
+{{ entry.author }}. 
+	{% if entry.type == "inproceedings" %}
+	{{ entry.date | date: '%-d %B %Y' }}. 
+	<strong>{{ entry.title }}</strong>.
+	{{ entry.eventtitle }}. 
+	{{ entry.location }}.
+
+{% elsif entry.type == "article" %}
+	{{ entry.year }}
+	<strong>{{ entry.title }}</strong>.
+	{{ entry.journal }}.
+	{% if entry.issue %}
+		{{ entry.issue }}.
+	{% else %}
+	{% endif %}
+	{{ entry.publisher }}.
+{% endif %}
+</li>

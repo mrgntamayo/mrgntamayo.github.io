@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alreadyseveral
 github_username:  leximch
+gtag: UA-121343197-1
 
 footer_copyright: Copyright 2019 Alex Chace.
 
@@ -57,7 +58,7 @@ scholar:
   sort_by: year
   
   order: descending
-  bibliography_template: bib
+  bibliography_template: new_bib
 
   replace_strings: true
   join_strings: true

@@ -1,5 +1,12 @@
 <div class="topnav">
-  <a {% if page.url == '/' %} class="active title" {% else %} class="title" {% endif %} href="{{ site.url }}{{ site.baseurl }}">{{ site.title | upcase }}</a>
-  <a {% if page.url == '/contact/' %} class="active"{% endif %} href="{{ site.url }}{{ site.baseurl }}/contact/">CONTACT</a>
-  <a href="https://www.patreon.com/{{ site.patreon }}">BLOG</a>
+	<div class="row">
+		<div class="column">
+			<a {% if page.url == '/' %} class="active title" {% else %} class="title" {% endif %} href="{{ site.url }}{{ site.baseurl }}">{{ site.title | upcase }}</a>
+			<a {% if page.url == '/contact/' %} class="active"{% endif %} href="{{ site.url }}{{ site.baseurl }}/contact/">CONTACT</a>
+			<a href="https://www.patreon.com/{{ site.patreon }}">BLOG</a>
+		</div>
+		<div class="column" style="float: right; text-align: right;">
+			<a href= "{{ site.url }}{{ site.baseurl }}/assets/cv.pdf" <i class="fas fa-file-pdf fa-lg"></i></a>
+		</div>
+	</div>
 </div>
