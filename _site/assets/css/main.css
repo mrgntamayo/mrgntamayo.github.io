@@ -1,6 +1,6 @@
 body {
   color: #000;
-  background-color: #B94F74;
+  background-color: #eacad5;
   font-family: "PT Mono", monospace;
   line-height: 1.25;
   font-size: 100%; }
@@ -84,7 +84,7 @@ footer {
   color: #000; }
 
 .logo {
-  background-color: #B94F74;
+  background-color: #eacad5;
   color: #ece8f4;
   overflow: hidden;
   width: 50%;
@@ -105,7 +105,7 @@ footer {
     margin-bottom: .5em; }
 
 .topnav {
-  background-color: #B94F74;
+  background-color: #eacad5;
   overflow: hidden;
   text-align: left;
   font-family: "PT Mono", monospace;
@@ -128,4 +128,4 @@ footer {
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #000;
-  color: #B94F74; }
+  color: #eacad5; }
