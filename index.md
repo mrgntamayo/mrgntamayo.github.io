@@ -26,14 +26,21 @@ guest_lectures:
 ---
 
 # Alex Chace
-Pronouns: they/them/theirs
+<ul class="contact">
+	<li><i class="fas fa-neuter"></i> they/them/theirs</li>
+	<li><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}">{{site.email}}</a></li>
+	<li><i class="fab fa-twitter"></i> <a href="twitter.com/{{ site.twitter }}">{{ site.twitter }}</a></li>
+	<li><i class="fas fa-blog"></i> <a href="https://frenziedstasis.org">frenziedstasis.org</a></li>
+</ul>
 
-Email: [alex@frenziedstasis.org](alex@frenziedstasis.org)
+<hr>
 
-## Bio
-Hi! I am an interdisciplinary anthropologist and gender studies scholar with a background in linguistics, sociology, software development, and literature.
+## <i class="fas fa-address-book"></i> Bio
+I am an interdisciplinary scholar with interests in biomedicine, cybernetics, gender studies, horror films, psychoanalysis, and posthumanism.
 
-## Education
+<hr>
+
+## <i class="fas fa-university"></i> Education
 
 {% for degree in page.education %}
 <div class="degree">
@@ -54,7 +61,9 @@ Hi! I am an interdisciplinary anthropologist and gender studies scholar with a b
 </div>
 {% endfor %}
 
-## Publications
+<hr>
+
+## <i class="fas fa-file-alt"></i> Publications
 
 ### Articles
 
@@ -66,7 +75,9 @@ Hi! I am an interdisciplinary anthropologist and gender studies scholar with a b
 {% bibliography --file papers -q @inproceedings %}
 </ul>
 
-## Teaching
+<hr>
+
+## <i class="fas fa-chalkboard-teacher"></i> Teaching
 
 ### Teaching Assistant
 - Introduction to Linguistic Anthropology (2).

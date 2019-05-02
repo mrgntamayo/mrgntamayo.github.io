@@ -86,6 +86,7 @@ a:hover {
       margin: 2px 0;
       position: relative;
       padding: 2.5;
+      font-size: 90%;
     }
  }
 
@@ -95,4 +96,20 @@ footer {
 .creative-commons {
   text-decoration: none;
   color: $text-color;
+}
+
+.contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  font-size: 90%;
+}
+
+hr {
+  border-color: $text-color;
+  color: $text-color;
+  background-color: $text-color;
 }
