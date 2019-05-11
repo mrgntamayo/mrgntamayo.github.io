@@ -22,7 +22,8 @@ a {
   color: #000; }
 
 a:hover {
-  color: #000; }
+  color: #eacad5;
+  background-color: #000; }
 
 .wrapper {
   max-width: -webkit-calc(800px - (50px * 2));
@@ -79,6 +80,9 @@ a:hover {
 
 footer {
   border-top: 2px solid #000; }
+  footer a:hover {
+    background-color: #000;
+    color: #eacad5; }
 
 .creative-commons {
   text-decoration: none;

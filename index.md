@@ -14,6 +14,17 @@ education:
     time: 2017
     degree: BA, Applied Linguistics
 
+jobs:
+  - title: "Graduate Research Assistant"
+    place: "Global Health Discourses Project"
+    time: "Jan-May 2019"
+  - title: "Graduate Teaching Assistant"
+    place: "GSU Dept. of Anthropology"
+    time: "Aug 2017-Dec 2018"
+  - title: "Growth Marketing Intern"
+    place: "Simple Showing, Inc."
+    time: "July-Nov 2017"
+
 guest_lectures:
   - title: "Transgender: From the Clinic to the Protest"
     place: Georgia State University
@@ -87,9 +98,17 @@ I am an interdisciplinary scholar with interests in biomedicine, cybernetics, ge
 
 {% for lecture in page.guest_lectures %}
 <div class="degree">
-	<h4>{{ lecture.title }}</h4>
+	<h4>{{ lecture.title }} ({{ lecture.date }})</h4>
 	<p>{{ lecture.place }}</p>
 	<p>{{ lecture.course }}</p>
-	<p>{{ lecture.date }}</p>
+</div>
+{% endfor %}
+
+## <i class="fas fa-briefcase"></i> Work Experience
+
+{% for job in page.jobs %}
+<div class="degree">
+	<h4>{{ job.title }} ({{ job.time }})</h4>
+	<p>{{ job.place }}</p>
 </div>
 {% endfor %}
