@@ -20,7 +20,7 @@ jobs:
     place: "GSU Dept. of Anthropology"
     time: "Aug 17-Dec 2018"
   - title: "Growth Marketing Intern"
-    place: "Simple Showing, Inc."
+    place: "SimpleShowing, Inc"
     time: "July-Nov 2017"
 
 guest_lectures:

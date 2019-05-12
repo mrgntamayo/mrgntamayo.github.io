@@ -1,25 +1,22 @@
 <li>
-	{% if entry.author != "Chace, Alexandra" %} {{ entry.author }}. {% endif %}
+	{% if entry.author != "Chace, Alexandra" %} {{ entry.author }}, {% endif %}
 	{% if entry.type == "inproceedings" %}
-		{{ entry.date | date: '%-d %B %Y' }}. 
-		<strong>{{ entry.title }}</strong>.
-		{{ entry.eventtitle }}. 
+		<strong>{{ entry.title }}</strong>,
+		{{ entry.date | date: '%-d %B %Y' }}, 
+		<em>{{ entry.eventtitle }}</em>, 
 		{{ entry.location }}.
 
 	{% elsif entry.type == "article" %}
-		{{ entry.year }}. 
-		<strong>{{ entry.title }}</strong>.
-		{{ entry.journal }}.
+		<strong>{{ entry.title }}</strong>,
+		<em>{{ entry.journal }}</em>,
 		{% if entry.issue %}
-			{{ entry.issue }}.
-		{% else %}
+			{{ entry.issue }}, 
 		{% endif %}
 		{{ entry.publisher }}.
 	{% elsif entry.type == "thesis" %}
-		{{ entry.date | date: '%-d %B %Y' }}.
-		<strong>{{ entry.title }}</strong>.
+		<strong>{{ entry.title }}</strong>, 
+		{{ entry.date | date: '%-d %B %Y' }}, 
 		{{ entry.institution }}.
-		{{ entry.location }}.
 	{% endif %}
 <br>
 {% if entry.pdf %}
