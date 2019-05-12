@@ -84,12 +84,29 @@ a:hover {
  }
 
 footer {
+  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+  max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $horizontal-spacing-unit;
+  padding-left: $horizontal-spacing-unit;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
   border-top: 2px solid $text-color;
 
-  a:hover {
-    background-color: $text-color;
-    color: $background-color;
+  border-bottom: 2px solid $text-color;
+  line-height: 1.75;
+  /* Add a color to the active/current link */
+  .active {
+    font-weight: bold;
   }
+  .title {
+    font-weight: $heading-font-weight;
+  }
+
 }
 .creative-commons {
   text-decoration: none;

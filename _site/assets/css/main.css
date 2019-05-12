@@ -74,10 +74,25 @@ a:hover {
     font-size: 90%; }
 
 footer {
-  border-top: 2px solid #000; }
-  footer a:hover {
-    background-color: #000;
-    color: #eacad5; }
+  max-width: -webkit-calc(800px - (50px * 2));
+  max-width: calc(800px - (50px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  line-height: 1.75;
+  /* Add a color to the active/current link */ }
+  footer .active {
+    font-weight: bold; }
+  footer .title {
+    font-weight: 700; }
 
 .creative-commons {
   text-decoration: none;
@@ -113,12 +128,20 @@ hr {
     margin-bottom: .5em; }
 
 .topnav {
-  background-color: #eacad5;
+  max-width: -webkit-calc(800px - (50px * 2));
+  max-width: calc(800px - (50px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
   overflow: hidden;
   text-align: left;
-  font-family: "PT Mono", monospace;
+  display: block;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  line-height: 1.5;
+  line-height: 1.75;
   /* Add a color to the active/current link */ }
   .topnav .active {
     font-weight: bold; }
