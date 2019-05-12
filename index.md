@@ -2,16 +2,14 @@
 layout: default
 education:
   - school: Georgia State University
-    time: May 2023
+    time: Aug 19-May 2023
     degree: PhD, Moving Image Studies
-  - school: Georgia State University
-    time: 2019
+  - school: GSU
+    time: Aug 17-May 2019
     degree: MA, Anthropology
-    thesis: "Necrotic Machines/Zombie Genders: Transfeminine Disruptions of Feminist Progress"
-    advisor: Cassandra White
-    committee: Jennifer Patico and Megan Sinnott
-  - school: Georgia State University
-    time: 2017
+    committee: Cassandra White (chair), Jennifer Patico, and Megan Sinnott
+  - school: GSU
+    time: Aug 13-May 2017
     degree: BA, Applied Linguistics
 
 jobs:
@@ -20,7 +18,7 @@ jobs:
     time: "Jan-May 2019"
   - title: "Graduate Teaching Assistant"
     place: "GSU Dept. of Anthropology"
-    time: "Aug 2017-Dec 2018"
+    time: "Aug 17-Dec 2018"
   - title: "Growth Marketing Intern"
     place: "Simple Showing, Inc."
     time: "July-Nov 2017"
@@ -36,7 +34,7 @@ guest_lectures:
     date: November 7 2018
 ---
 
-# Alex Chace
+# Alex Chace, M.A.
 <ul class="contact">
 	<li><i class="fas fa-neuter"></i> they/them/theirs</li>
 	<li><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}">{{site.email}}</a></li>
@@ -53,21 +51,20 @@ I am an interdisciplinary scholar with interests in biomedicine, cybernetics, ge
 
 ## <i class="fas fa-university"></i> Education
 
+<style>
+  h5 {
+    letter-spacing: .5px;
+    font-weight: normal;
+    text-transform: none;
+  }
+</style>
+
 {% for degree in page.education %}
 <div class="degree">
-	<h4>{{ degree.degree }} ({{ degree.time }})</h4>
-	<p>{{ degree.school }}</p>
-	{% if degree.thesis %}
-		<p>Thesis: <b>{{ degree.thesis }}</b></p>
-	{% endif %}
-	{% if degree.dissertation %}
-		<p>Dissertation: {{ degree.dissertation }}</p>
-	{% endif %}
-	{% if degree.advisor %}
-		<p>Advisor: {{ degree.advisor }}</p>
-	{% endif %}
+	<h5>{{ degree.degree }} ({{ degree.school }}).</h5>
+	<p>{{ degree.time }}.</p>
 	{% if degree.committee %}
-		<p>Committee: {{ degree.committee }}</p>
+		<p>Committee: {{ degree.committee }}.</p>
 	{% endif %}
 </div>
 {% endfor %}
@@ -75,6 +72,10 @@ I am an interdisciplinary scholar with interests in biomedicine, cybernetics, ge
 <hr>
 
 ## <i class="fas fa-file-alt"></i> Publications
+
+### MA Thesis
+
+{% bibliography --file papers -q @thesis %}
 
 ### Articles
 
@@ -98,17 +99,19 @@ I am an interdisciplinary scholar with interests in biomedicine, cybernetics, ge
 
 {% for lecture in page.guest_lectures %}
 <div class="degree">
-	<h4>{{ lecture.title }} ({{ lecture.date }})</h4>
-	<p>{{ lecture.place }}</p>
-	<p>{{ lecture.course }}</p>
+	<h5>{{ lecture.title }} ({{ lecture.date }}).</h5>
+  <p>{{ lecture.course }},</p>
+	<p>{{ lecture.place }}.</p>
 </div>
 {% endfor %}
+
+<hr>
 
 ## <i class="fas fa-briefcase"></i> Work Experience
 
 {% for job in page.jobs %}
 <div class="degree">
-	<h4>{{ job.title }} ({{ job.time }})</h4>
-	<p>{{ job.place }}</p>
+	<h5>{{ job.title }} ({{ job.place }}).</h5>
+	<p>{{ job.time }}</p>
 </div>
 {% endfor %}
