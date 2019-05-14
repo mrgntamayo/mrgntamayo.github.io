@@ -46,13 +46,6 @@ a:hover {
   background: #ece8f4;
   /* Gecko Browsers */ }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 0;
-  margin: 0; }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -60,39 +53,6 @@ a:hover {
   clear: both;
   padding: 0;
   margin: 0; }
-
-.bibliography {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  list-style-type: none;
-  margin-left: 2px;
-  padding-left: 2px; }
-  .bibliography li {
-    margin: 2px 0;
-    position: relative;
-    padding: 2.5;
-    font-size: 90%; }
-
-footer {
-  max-width: -webkit-calc(800px - (50px * 2));
-  max-width: calc(800px - (50px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
-  overflow: hidden;
-  text-align: center;
-  display: block;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  line-height: 1.75;
-  /* Add a color to the active/current link */ }
-  footer .active {
-    font-weight: bold; }
-  footer .title {
-    font-weight: 700; }
 
 .creative-commons {
   text-decoration: none;
@@ -161,11 +121,38 @@ hr {
   background-color: #000;
   color: #eacad5; }
 
+.topnav .column {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0; }
+
+footer {
+  max-width: -webkit-calc(800px - (50px * 2));
+  max-width: calc(800px - (50px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  line-height: 1.75; }
+
 .contact {
-  list-style: none;
   margin: 0;
   padding: 0;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 95%; }
+  .contact .column {
+    float: left;
+    width: 25px;
+    padding: 0;
+    margin: 0; }
 
 .bio {
   font-size: 95%;
@@ -176,10 +163,22 @@ hr {
   font-weight: bold;
   text-transform: none; }
 .item p {
-  font-size: 90%;
+  font-size: 95%;
   text-indent: .5em;
   line-height: .9; }
 .item .description {
   text-indent: 0em;
   line-height: 1.25;
   padding-left: .5em; }
+
+.bibliography {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  list-style-type: none;
+  margin-left: 2px;
+  padding-left: 2px; }
+  .bibliography li {
+    margin: 2px 0;
+    position: relative;
+    padding: 2.5;
+    font-size: 95%; }

@@ -1,0 +1,16 @@
+footer {
+  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+  max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $horizontal-spacing-unit;
+  padding-left: $horizontal-spacing-unit;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid $text-color;
+  border-bottom: 2px solid $text-color;
+  line-height: 1.75;
+}

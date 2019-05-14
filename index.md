@@ -40,13 +40,26 @@ bio: I am an interdisciplinary scholar with interests in biomedicine, cybernetic
 pronouns: they/them/theirs
 ---
 
-# Alex Chace, M.A.
-<ul class="contact">
-    <li><i class="fas fa-neuter"></i> {{ page.pronouns }}</li>
-    <li><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}">{{site.email}}</a></li>
-    <li><i class="fab fa-twitter"></i> <a href="twitter.com/{{ site.twitter }}">{{ site.twitter }}</a></li>
-    <li><i class="fas fa-blog"></i> <a href="https://frenziedstasis.org">frenziedstasis.org</a></li>
-</ul>
+# Alex Chace, MA.
+
+<div class="contact">
+    <div class="row">
+        <div class="column"><i class="fas fa-neuter"></i></div>
+        <div class="column">{{ page.pronouns }}</div>
+    </div>
+    <div class="row">
+        <div class="column"><i class="fas fa-envelope"></i></div>
+        <div class="column"><a href="mailto:{{ site.email }}">{{site.email}}</a></div>
+    </div>
+    <div class="row">
+        <div class="column"><i class="fab fa-twitter"></i></div>
+        <div class="column"><a href="http://twitter.com/{{ site.twitter }}">{{ site.twitter }}</a></div>
+    </div>
+    <div class="row">
+        <div class="column"><i class="fas fa-blog"></i></div>
+        <div class="column"><a href="https://frenziedstasis.org">frenziedstasis.org</a></div>
+    </div>
+</div>
 
 <hr>
 

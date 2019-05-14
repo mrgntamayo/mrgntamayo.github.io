@@ -35,7 +35,6 @@
   border-right: 2px solid black;
   border-left: 2px solid black;
   border-top: 2px solid $text-color;
-
   border-bottom: 2px solid $text-color;
   line-height: 1.75;
   /* Add a color to the active/current link */
@@ -60,4 +59,11 @@
 .topnav a:hover {
   background-color: $text-color;
   color: $background-color;
+}
+
+.topnav .column {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0;
 }
