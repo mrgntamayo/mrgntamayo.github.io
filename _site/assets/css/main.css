@@ -101,7 +101,7 @@ hr {
   border-left: 2px solid black;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  line-height: 1.75;
+  line-height: 2;
   /* Add a color to the active/current link */ }
   .topnav .active {
     font-weight: bold; }
@@ -141,7 +141,7 @@ footer {
   border-left: 2px solid black;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  line-height: 1.75; }
+  line-height: 2; }
 
 .contact {
   margin: 0;
