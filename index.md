@@ -30,26 +30,23 @@ guest_lectures:
   - title: "Transgender: From the Clinic to the Protest"
     place: Georgia State University
     course: Sex, Culture, and Society
-    date: May 15 2018
+    time: May 15 2018
   - title: "Graduate Studies in Anthropology"
     place: "Georgia State University"
     course: "Senior Seminar in Anthropology"
-    date: November 7 2018
-
-bio: I am an interdisciplinary scholar with interests in biomedicine, cybernetics, gender studies, horror films, psychoanalysis, and posthumanism.
-pronouns: they/them/theirs
+    time: November 7 2018
 ---
 
-# Alex Chace, MA.
+<h1>Alex Chace, MA.</h1>
 
 <div class="contact">
     <div class="row">
         <div class="column"><i class="fas fa-neuter"></i></div>
-        <div class="column">{{ page.pronouns }}</div>
+        <div class="column">{{ site.pronouns }}</div>
     </div>
     <div class="row">
         <div class="column"><i class="fas fa-envelope"></i></div>
-        <div class="column"><a href="mailto:{{ site.email }}">{{site.email}}</a></div>
+        <div class="column"><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
     </div>
     <div class="row">
         <div class="column"><i class="fab fa-twitter"></i></div>
@@ -57,44 +54,44 @@ pronouns: they/them/theirs
     </div>
     <div class="row">
         <div class="column"><i class="fas fa-blog"></i></div>
-        <div class="column"><a href="https://frenziedstasis.org">frenziedstasis.org</a></div>
+        <div class="column"><a href="https://{{ site.blog }}">{{ site.blog }}</a></div>
     </div>
 </div>
 
 <hr>
 
-## <i class="fas fa-address-book"></i> Bio
-<p class="bio">{{ page.bio }}</p>
+<h2> <i class="fas fa-address-book"></i> Bio</h2>
+<p class="bio">{{ site.bio }}</p>
 
 <hr>
 
-## <i class="fas fa-university"></i> Education
-
-{% for degree in page.education %}
-<div class="item">
-    <h5>{{ degree.degree }} ({{ degree.school }}).</h5>
-    <p>{{ degree.time }}.</p>
-    {% if degree.committee %}
-        <p>Committee: {{ degree.committee }}.</p>
-    {% endif %}
+<h2> <i class="fas fa-university"></i> Education</h2>
+<div class="items">
+    {% for degree in page.education %}
+    <div class="item">
+        <h5>{{ degree.degree }} ({{ degree.school }}).</h5>
+        <p class="time">{{ degree.time }}.</p>
+        {% if degree.committee %}
+            <p class="time">Committee: {{ degree.committee }}.</p>
+        {% endif %}
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
-
 <hr>
 
-## <i class="fas fa-briefcase"></i> Work Experience
-
-{% for job in page.jobs %}
-<div class="item">
-    <h5>{{ job.title }} ({{ job.place }}).</h5>
-    <p>{{ job.time }}</p>
-    <p class="description">{{ job.description }}</p>
+<h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+<div class="items">
+    {% for job in page.jobs %}
+    <div class="item">
+        <h5>{{ job.title }} ({{ job.place }}).</h5>
+        <p class="time">{{ job.time }}</p>
+        <p class="description">{{ job.description }}</p>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
-
 <hr>
 
-## <i class="fas fa-file-alt"></i> Publications
+<h2><i class="fas fa-file-alt"></i> Publications</h2>
 
 ### MA Thesis
 
@@ -116,18 +113,19 @@ pronouns: they/them/theirs
 
 <hr>
 
-## <i class="fas fa-chalkboard-teacher"></i> Teaching
+<h2><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
 
 ### Teaching Assistant
 - Introduction to Linguistic Anthropology (2).
 - Introduction to Anthropology.
 
 ### Guest Lectures
-
-{% for lecture in page.guest_lectures %}
-<div class="item">
-    <h5>{{ lecture.title }} ({{ lecture.date }}).</h5>
-  <p>{{ lecture.course }},</p>
-    <p>{{ lecture.place }}.</p>
+<div class="items">
+    {% for lecture in page.guest_lectures %}
+    <div class="item">
+        <h5>{{ lecture.title }} ({{ lecture.course }}).</h5>
+        <p class="time">{{ lecture.time }},</p>
+        <p class="description">{{ lecture.place }}.</p>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}

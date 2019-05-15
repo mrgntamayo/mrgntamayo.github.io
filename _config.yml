@@ -16,14 +16,22 @@
 title: Alex Chace
 email: alex@frenziedstasis.org
 description: >- # this means to ignore newlines until "baseurl:"
-  PhD student in Moving Image Studies. 
+  Ph.D. student in Moving Image Studies at Georgia State University.
+footer: Alex Chace.
+
 baseurl: "/jekyll-cv" # the subpath of your site, e.g. /blog
 url: "http://alexchace.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+bio: >-
+  I am an interdisciplinary scholar with interests in biomedicine, cybernetics, gender studies, horror films, psychoanalysis, and posthumanism.
+pronouns: they/them/theirs
+
 twitter: alreadyseveral
-github_username:  leximch
+github:  leximch
+blog: frenziedstasis.org
 gtag: UA-121343197-1
 
-footer_copyright: Alex Chace.
+
 
 # permalink: /:title/
 
@@ -32,18 +40,6 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-scholar
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 
 scholar:

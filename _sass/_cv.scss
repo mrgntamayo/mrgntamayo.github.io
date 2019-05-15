@@ -1,8 +1,8 @@
 .contact {
 	margin: 0;
 	padding: 0;
+	padding-bottom: $vertical-spacing-unit;
 	line-height: 1.5;
-	font-size: 95%;
 	.column {
 		float: left;
 		width: 1.5em;
@@ -12,8 +12,11 @@
 }
 
 .bio {
-	font-size: 95%;
-	padding-bottom: 10px;
+	padding-bottom: $vertical-spacing-unit/2;
+}
+
+.items {
+	padding-bottom: $vertical-spacing-unit/2;
 }
 
 .item {
@@ -24,7 +27,10 @@
 	}
 	p {
 		font-size: 95%;
-		text-indent: .5em;
+	}
+	.time {
+		text-indent: 0em;
+		padding-left: .5em;
 		line-height: .9;
 	}
 	.description {
