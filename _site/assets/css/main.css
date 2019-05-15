@@ -76,7 +76,8 @@ ul {
 
 @media only screen and (max-device-width: 480px) {
   .column-left, .column-right {
-    float: none; } }
+    float: none;
+    width: 100%; } }
 .logo {
   background-color: #eacad5;
   color: #ece8f4;
