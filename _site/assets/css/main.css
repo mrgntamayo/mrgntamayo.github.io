@@ -27,7 +27,8 @@ h6 {
   letter-spacing: -1px; }
 
 a {
-  color: #000; }
+  color: #000;
+  text-underline-position: under; }
 
 a:hover {
   color: #eacad5;
@@ -54,6 +55,16 @@ a:hover {
   padding: 0;
   margin: 0; }
 
+.column-left {
+  width: 50%;
+  display: inline-block;
+  float: left; }
+
+.column-right {
+  width: 50%;
+  display: inline-lock;
+  float: right; }
+
 hr {
   border-color: #000;
   color: #000;
@@ -63,6 +74,9 @@ hr {
 ul {
   padding-bottom: 10px; }
 
+@media only screen and (max-device-width: 480px) {
+  .column-left, .column-right {
+    float: none; } }
 .logo {
   background-color: #eacad5;
   color: #ece8f4;
@@ -139,6 +153,10 @@ footer {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   line-height: 2; }
+
+.name {
+  border-bottom: 10px solid black;
+  display: inline-block; }
 
 .contact {
   margin: 0;

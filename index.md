@@ -37,8 +37,11 @@ guest_lectures:
     time: November 7 2018
 ---
 
-<h1>Alex Chace, MA.</h1>
+<h1 class="name">Alex Chace, MA.</h1>
+<div class="row">
+    <div class="column-left">
 
+<h3>Contact</h3>
 <div class="contact">
     <div class="row">
         <div class="column"><i class="fas fa-neuter"></i></div>
@@ -57,11 +60,14 @@ guest_lectures:
         <div class="column"><a href="https://{{ site.blog }}">{{ site.blog }}</a></div>
     </div>
 </div>
+</div>
 
-<hr>
-
-<h2> <i class="fas fa-address-book"></i> Bio</h2>
+<div class="column-right">
+    <h3>Bio</h3>
 <p class="bio">{{ site.bio }}</p>
+</div>
+
+</div>
 
 <hr>
 

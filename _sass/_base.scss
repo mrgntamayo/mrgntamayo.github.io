@@ -29,6 +29,7 @@ h6 {
 
 a {
   color: $text-color;
+  text-underline-position: under;
 }
 
 a:hover {
@@ -59,6 +60,17 @@ a:hover {
   margin: 0;
 }
 
+.column-left {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+.column-right {
+  width: 50%;
+  display: inline-lock;
+  float: right;
+}
+
 hr {
   border-color: $text-color;
   color: $text-color;
@@ -68,4 +80,10 @@ hr {
 
 ul {
   padding-bottom: $vertical-spacing-unit/2;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .column-left, .column-right {
+    float: none;
+  }
 }
