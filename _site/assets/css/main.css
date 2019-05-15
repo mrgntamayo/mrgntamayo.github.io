@@ -26,6 +26,9 @@ h6 {
   text-transform: uppercase;
   letter-spacing: -1px; }
 
+h5 {
+  font-size: 95%; }
+
 a {
   color: #000;
   text-underline-position: under; }
