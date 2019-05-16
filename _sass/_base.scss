@@ -42,8 +42,8 @@ a:hover {
 }
 
 .wrapper {
-  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-  max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
+  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 3));
+  max-width:         calc(800px - (#{$horizontal-spacing-unit} * 3));
   margin-right: auto;
   margin-left: auto;
   padding-right: $horizontal-spacing-unit;
@@ -80,6 +80,8 @@ hr {
   color: $text-color;
   background-color: $text-color;
   padding-top: 10px;
+  margin-left: -$horizontal-spacing-unit;
+  margin-right: -$horizontal-spacing-unit;
 }
 
 ul {

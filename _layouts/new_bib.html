@@ -1,4 +1,4 @@
-<li>
+<li style="text-indent: -1em; padding-left: 1em;">
 	{% if entry.author != "Chace, Alexandra" %} {{ entry.author }}, {% endif %}
 	{% if entry.type == "inproceedings" %}
 		<strong>{{ entry.title }}</strong>,
@@ -13,6 +13,7 @@
 			{{ entry.issue }}, 
 		{% endif %}
 		{{ entry.publisher }}.
+
 	{% elsif entry.type == "thesis" %}
 		<strong>{{ entry.title }}</strong>, 
 		{{ entry.date | date: '%-d %B %Y' }}, 

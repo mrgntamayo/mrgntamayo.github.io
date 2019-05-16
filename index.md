@@ -4,11 +4,11 @@ education:
   - school: Georgia State University
     time: Aug 19-May 2023
     degree: PhD, Moving Image Studies
-  - school: GSU
+  - school: Georgia State University
     time: Aug 17-May 2019
     degree: MA, Anthropology
     committee: Cassandra White (chair), Jennifer Patico, and Megan Sinnott
-  - school: GSU
+  - school: Georgia State University
     time: Aug 13-May 2017
     degree: BA, Applied Linguistics
 
@@ -16,7 +16,7 @@ jobs:
   - title: "Graduate Research Assistant"
     place: "Global Health Discourses Project"
     time: "Jan-May 2019"
-    description: "Employed R and igraph to visualize a social network of global health organizations based on website data."
+    description: "Employed R and igraph to visualize a social network of global health organizations scraped on organization websites."
   - title: "Graduate Teaching Assistant"
     place: "GSU Dept. of Anthropology"
     time: "Aug 17-Dec 2018"
@@ -75,10 +75,11 @@ guest_lectures:
 <div class="items">
     {% for degree in page.education %}
     <div class="item">
-        <h5>{{ degree.degree }} ({{ degree.school }}).</h5>
+        <h5>{{ degree.degree }}.</h5>
+        <p class="time">{{ degree.school }}.</p>
         <p class="time">{{ degree.time }}.</p>
         {% if degree.committee %}
-            <p class="time">Committee: {{ degree.committee }}.</p>
+            <p class="description">Committee: {{ degree.committee }}.</p>
         {% endif %}
     </div>
     {% endfor %}
@@ -89,8 +90,9 @@ guest_lectures:
 <div class="items">
     {% for job in page.jobs %}
     <div class="item">
-        <h5>{{ job.title }} ({{ job.place }}).</h5>
-        <p class="time">{{ job.time }}</p>
+        <h5>{{ job.title }}.</h5>
+        <p class="time">{{ job.place }}.</p>
+        <p class="time">{{ job.time }}.</p>
         <p class="description">{{ job.description }}</p>
     </div>
     {% endfor %}
@@ -129,8 +131,9 @@ guest_lectures:
 <div class="items">
     {% for lecture in page.guest_lectures %}
     <div class="item">
-        <h5>{{ lecture.title }} ({{ lecture.course }}).</h5>
-        <p class="time">{{ lecture.time }},</p>
+        <h5>{{ lecture.title }}.</h5>
+        <p class="time">{{ lecture.time }}.</p>
+        <p class="time">{{ lecture.course }},</p>
         <p class="description">{{ lecture.place }}.</p>
     </div>
     {% endfor %}

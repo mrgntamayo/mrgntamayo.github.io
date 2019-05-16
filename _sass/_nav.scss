@@ -23,8 +23,8 @@
 }
 
 .topnav {
-  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-  max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
+  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 3));
+  max-width:         calc(800px - (#{$horizontal-spacing-unit} * 3));
   margin-right: auto;
   margin-left: auto;
   padding-right: $horizontal-spacing-unit;
@@ -44,21 +44,23 @@
   .title {
     font-weight: $heading-font-weight;
   }
+  background-color: $text-color;
+  color: $background-color;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  color: $text-color;
+  color: $background-color;
   text-align: left;
-  padding: 4px 6px;
-  font-size: 17px;
+  padding: 0px 0px 0px 0px;
+  font-size: 16px;
   text-decoration: none;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: $text-color;
-  color: $background-color;
+  color: lighten($background-color, 50%);
 }
 
 .topnav .column {

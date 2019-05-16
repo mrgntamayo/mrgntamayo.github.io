@@ -38,8 +38,8 @@ a:hover {
   background-color: #000; }
 
 .wrapper {
-  max-width: -webkit-calc(800px - (50px * 2));
-  max-width: calc(800px - (50px * 2));
+  max-width: -webkit-calc(800px - (50px * 3));
+  max-width: calc(800px - (50px * 3));
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -72,7 +72,9 @@ hr {
   border-color: #000;
   color: #000;
   background-color: #000;
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin-left: -50px;
+  margin-right: -50px; }
 
 ul {
   padding-bottom: 10px; }
@@ -103,8 +105,8 @@ ul {
     margin-bottom: .5em; }
 
 .topnav {
-  max-width: -webkit-calc(800px - (50px * 2));
-  max-width: calc(800px - (50px * 2));
+  max-width: -webkit-calc(800px - (50px * 3));
+  max-width: calc(800px - (50px * 3));
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -117,7 +119,9 @@ ul {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   line-height: 2;
-  /* Add a color to the active/current link */ }
+  /* Add a color to the active/current link */
+  background-color: #000;
+  color: #eacad5; }
   .topnav .active {
     font-weight: bold; }
   .topnav .title {
@@ -125,16 +129,16 @@ ul {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  color: #000;
+  color: #eacad5;
   text-align: left;
-  padding: 4px 6px;
-  font-size: 17px;
+  padding: 0px 0px 0px 0px;
+  font-size: 16px;
   text-decoration: none; }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #000;
-  color: #eacad5; }
+  color: white; }
 
 .topnav .column {
   float: left;
@@ -143,8 +147,8 @@ ul {
   margin: 0; }
 
 footer {
-  max-width: -webkit-calc(800px - (50px * 2));
-  max-width: calc(800px - (50px * 2));
+  max-width: -webkit-calc(800px - (50px * 3));
+  max-width: calc(800px - (50px * 3));
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -156,7 +160,9 @@ footer {
   border-left: 2px solid black;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  line-height: 2; }
+  line-height: 2;
+  background-color: #000;
+  color: #eacad5; }
 
 .name {
   border-bottom: 10px solid black;
@@ -205,3 +211,5 @@ footer {
     position: relative;
     padding: 2.5;
     font-size: 95%; }
+  .bibliography a {
+    text-decoration: none; }
