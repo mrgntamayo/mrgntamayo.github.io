@@ -22,14 +22,6 @@ footer: Alex Chace.
 baseurl: "/jekyll-cv" # the subpath of your site, e.g. /blog
 url: "http://alexchace.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-bio: >-
-  I am an interdisciplinary scholar with interests in anarchism, cybernetics, queer/trans studies, horror films, psychoanalysis, and posthumanism.
-pronouns: they/them/theirs
-
-twitter: alreadyseveral
-github:  leximch
-linkedin: leximch
-blog: frenziedstasis.org
 gtag: UA-121343197-1
 
 permalink: /:title/

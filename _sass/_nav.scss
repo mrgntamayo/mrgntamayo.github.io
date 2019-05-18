@@ -1,28 +1,4 @@
-.logo {
-  background-color: $background-color;
-  color: $secondary-color;
-  overflow: hidden;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  font-family: $heading-font-family;
-  display: block;
-  a {
-    text-decoration: none;
-    color: $text-color;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: .5em;
-    margin-bottom: .5em;
-  }
-}
-
-.topnav {
+.top, .nav {
   max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 3));
   max-width:         calc(800px - (#{$horizontal-spacing-unit} * 3));
   margin-right: auto;
@@ -37,35 +13,39 @@
   border-top: 2px solid $text-color;
   border-bottom: 2px solid $text-color;
   line-height: 2;
-  /* Add a color to the active/current link */
-  .active {
-    font-weight: bold;
+  a {
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    font-size: 16px;
+    text-decoration: none;
   }
-  .title {
-    font-weight: $heading-font-weight;
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 0;
   }
-  background-color: $text-color;
-  color: $background-color;
+  .fas, .fab {
+    vertical-align: middle;
+  }
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.top {
+  background-color: $text-color;
   color: $background-color;
+  a {
+    color: $background-color;
+  }
+  /* Change the color of links on hover */
+  a:hover {
+    background-color: $text-color;
+    color: lighten($background-color, 50%);
+  }
+}
+
+.nav {
   text-align: left;
-  padding: 0px 0px 0px 0px;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: $text-color;
-  color: lighten($background-color, 50%);
-}
-
-.topnav .column {
-  float: left;
-  width: 50%;
-  padding: 0;
-  margin: 0;
+  text-transform: uppercase;
+  background-color: $background-color;
+  color: $text-color;
 }

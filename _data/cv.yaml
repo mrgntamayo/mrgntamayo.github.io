@@ -1,0 +1,54 @@
+name_title: Alex Chace, MA
+pronouns: they/them/theirs
+email: alex@frenziedstasis.org
+twitter: alreadyseveral
+github:  leximch
+linkedin: leximch
+blog: frenziedstasis.org
+bio: >-
+  I am an interdisciplinary scholar with interests in anarchism, cybernetics, queer/trans studies, horror films, psychoanalysis, and posthumanism.
+
+education:
+  - school: Georgia State University
+    time: Aug 19-May 2023
+    degree: PhD, Moving Image Studies
+  - school: Georgia State University
+    time: Aug 17-May 2019
+    degree: MA, Anthropology
+    committee: Cassandra White (chair), Jennifer Patico, and Megan Sinnott
+  - school: Georgia State University
+    time: Aug 13-May 2017
+    degree: BA, Applied Linguistics
+
+jobs:
+  - title: "Graduate Research Assistant"
+    place: "Global Health Discourses Project"
+    time: "Jan-May 2019"
+    description: "Employed R and igraph to visualize a social network of global health organizations scraped on organization websites."
+  - title: "Graduate Teaching Assistant"
+    place: "GSU Dept. of Anthropology"
+    time: "Aug 17-Dec 2018"
+    description: "Taught break-out sessions and guest-lectured in several introductory Anthropology courses. I also graded papers, tests, and other assignments."
+  - title: "Growth Marketing Intern"
+    place: "SimpleShowing, Inc"
+    time: "July-Nov 2017"
+    description: "Developed automated leads generation infrastructure in Python, using data from Zillow and other sources with customized text- and email-based outreach and preferential lead selection. I also assisted in updating company websites and customer-facing infrastructure in React, HTML, and CSS."
+
+guest_lectures:
+  - title: "Transgender: From the Clinic to the Protest"
+    place: Georgia State University
+    course: Sex, Culture, and Society
+    time: May 15 2018
+  - title: "Graduate Studies in Anthropology"
+    place: "Georgia State University"
+    course: "Senior Seminar in Anthropology"
+    time: November 7 2018
+
+ta:
+- Introduction to Linguistic Anthropology (2).
+- Introduction to Anthropology.
+
+projects:
+  - title: Post
+    url: http://github.com/leximch/post
+    description: A lightweight package manager for GNU/Linux, written in Ruby.

@@ -1,0 +1,33 @@
+{% include head.html %}
+{% include top.html %}
+
+<div class="nav">
+	<a href="{{ site.url }}{{ site.baseurl }}/#top">Bio</a> |
+	<a href="{{ site.url }}{{ site.baseurl }}/#education">Education</a> |
+	<a href="{{ site.url }}{{ site.baseurl }}/#employment">Employment</a> |
+	<a href="{{ site.url }}{{ site.baseurl }}/#publications">Publications</a> |
+	<a href="{{ site.url }}{{ site.baseurl }}/#teaching">Teaching</a> |
+	<a href="{{ site.url }}{{ site.baseurl }}/#projects">Projects</a>
+</div>
+
+<body>
+	<div class="wrapper">
+	{% include about.html %}
+	<hr>
+
+	{% include education.html %}
+	<hr>
+
+	{% include employment.html %}
+	<hr>
+
+	{% include publications.html %}
+	<hr>
+
+	{% include teaching.html %}
+	<hr>
+
+	{% include projects.html %}
+	</div>
+</body>
+{% include footer.html %}

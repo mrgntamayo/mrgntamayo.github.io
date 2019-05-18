@@ -88,9 +88,3 @@ ul {
   padding-bottom: $vertical-spacing-unit/2;
 }
 
-@media only screen and (max-device-width: 480px) {
-  .column-left, .column-right {
-    float: none;
-    width: 100%;
-  }
-}

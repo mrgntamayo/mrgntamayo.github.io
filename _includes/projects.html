@@ -1,0 +1,10 @@
+<h2 id="projects"><i class="fas fa-archive"></i> Projects</h2>
+<div class="items">
+    {% for project in site.data.cv.projects %}
+    <div class="item">
+        <h5>{{ project.title }}.</h5>
+        <p class="time"><a href="{{ project.url }}">{{ project.url }}</a>.</p>
+        <p class="description">{{ project.description }}</p>
+    </div>
+    {% endfor %}
+</div>

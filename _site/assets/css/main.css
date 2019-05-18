@@ -79,32 +79,7 @@ hr {
 ul {
   padding-bottom: 10px; }
 
-@media only screen and (max-device-width: 480px) {
-  .column-left, .column-right {
-    float: none;
-    width: 100%; } }
-.logo {
-  background-color: #eacad5;
-  color: #ece8f4;
-  overflow: hidden;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  font-family: "PT Mono", monospace;
-  display: block; }
-  .logo a {
-    text-decoration: none;
-    color: #000; }
-  .logo h1,
-  .logo h2,
-  .logo h3,
-  .logo h4,
-  .logo h5,
-  .logo h6 {
-    margin-top: .5em;
-    margin-bottom: .5em; }
-
-.topnav {
+.top, .nav {
   max-width: -webkit-calc(800px - (50px * 3));
   max-width: calc(800px - (50px * 3));
   margin-right: auto;
@@ -118,33 +93,35 @@ ul {
   border-left: 2px solid black;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  line-height: 2;
-  /* Add a color to the active/current link */
-  background-color: #000;
-  color: #eacad5; }
-  .topnav .active {
-    font-weight: bold; }
-  .topnav .title {
-    font-weight: 700; }
+  line-height: 2; }
+  .top a, .nav a {
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    font-size: 16px;
+    text-decoration: none; }
+  .top .column, .nav .column {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 0; }
+  .top .fas, .top .fab, .nav .fas, .nav .fab {
+    vertical-align: middle; }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.top {
+  background-color: #000;
   color: #eacad5;
+  /* Change the color of links on hover */ }
+  .top a {
+    color: #eacad5; }
+  .top a:hover {
+    background-color: #000;
+    color: white; }
+
+.nav {
   text-align: left;
-  padding: 0px 0px 0px 0px;
-  font-size: 16px;
-  text-decoration: none; }
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #000;
-  color: white; }
-
-.topnav .column {
-  float: left;
-  width: 50%;
-  padding: 0;
-  margin: 0; }
+  text-transform: uppercase;
+  background-color: #eacad5;
+  color: #000; }
 
 footer {
   max-width: -webkit-calc(800px - (50px * 3));
@@ -177,7 +154,12 @@ footer {
     float: left;
     width: 1.5em;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    vertical-align: middle; }
+  .contact .fas, .contact .fab {
+    vertical-align: middle;
+    text-align: left;
+    margin-top: 2.5px; }
 
 .bio {
   padding-bottom: 10px; }
@@ -201,8 +183,8 @@ footer {
   padding-left: .5em; }
 
 .bibliography {
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   list-style-type: none;
   margin-left: 2px;
   padding-left: 2px; }
@@ -213,3 +195,13 @@ footer {
     font-size: 95%; }
   .bibliography a {
     text-decoration: none; }
+  .bibliography:last-child {
+    margin-bottom: 5px; }
+
+@media only screen and (max-device-width: 480px) {
+  .column-left, .column-right {
+    float: none;
+    width: 100%; }
+
+  .nav {
+    display: none; } }

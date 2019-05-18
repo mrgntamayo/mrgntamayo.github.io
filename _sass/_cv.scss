@@ -13,7 +13,13 @@
 		width: 1.5em;
 		padding: 0;
 		margin: 0;
+		vertical-align: middle;
 	}
+    .fas, .fab {
+        vertical-align: middle;
+        text-align: left;
+        margin-top: 2.5px;
+    }
 }
 
 .bio {
@@ -46,8 +52,8 @@
 }
 
 .bibliography {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     list-style-type: none;
     margin-left: 2px;
     padding-left: 2px;
@@ -62,4 +68,7 @@
     a {
 	    text-decoration: none;
     }
- }
+	&:last-child {
+		margin-bottom: $vertical-spacing-unit/4;
+	}
+}
