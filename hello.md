@@ -1,7 +1,6 @@
 ---
 layout: page
+title: Hello
 ---
-
-# Hello
 
 Hello, World!
