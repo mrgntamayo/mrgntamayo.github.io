@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Ph.D. student in Moving Image Studies at Georgia State University.
 footer: Alex Chace.
 
-baseurl: "/jekyll-cv" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://alexchace.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 gtag: UA-121343197-1
