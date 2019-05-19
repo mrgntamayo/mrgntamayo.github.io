@@ -22,7 +22,8 @@
 <br>
 {% if entry.pdf %}
 	<a href="{{ site.url }}{{ site.baseurl }}/{{entry.pdf}}">[PDF]</a> 
-{% elsif entry.html %}
+{% endif %}
+{% if entry.html %}
 	<a href="{{entry.html}}">[HTML]</a> 
 {% endif %}
 </li>
