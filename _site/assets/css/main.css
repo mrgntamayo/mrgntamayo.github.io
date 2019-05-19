@@ -198,7 +198,7 @@ footer {
   .bibliography:last-child {
     margin-bottom: 5px; }
 
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-width: 600px) {
   .column-left, .column-right {
     float: none;
     width: 100%; }
