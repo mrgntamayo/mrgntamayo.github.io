@@ -198,10 +198,10 @@ footer {
   .bibliography:last-child {
     margin-bottom: 5px; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .column-left, .column-right {
     float: none;
-    width: 100%; }
-
+    width: 100%; } }
+@media screen and (max-width: 768px) {
   .nav {
     display: none; } }
