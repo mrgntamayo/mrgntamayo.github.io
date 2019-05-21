@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 footer: Alex Chace.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://alexchace.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://alexchace.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 gtag: UA-121343197-1
 
