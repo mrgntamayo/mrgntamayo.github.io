@@ -1,0 +1,19 @@
+---
+layout: page
+title: Publications
+---
+
+<h2>MA Thesis</h2>
+<ul class="bibliography">
+{% bibliography --file papers -q @thesis %}
+</ul>
+
+<h2>Articles</h2>
+<ul class="bibliography">
+{% bibliography --file papers -q @article %}
+</ul>
+
+<h2>Conference Papers</h2>
+<ul class="bibliography">
+{% bibliography --file papers -q @inproceedings %}
+</ul>

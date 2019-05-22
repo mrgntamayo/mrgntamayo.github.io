@@ -38,6 +38,10 @@
 	}
 	p {
 		font-size: 95%;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: .5em;
+		margin-top: .5em;
 	}
 	.time {
 		text-indent: 0em;
@@ -48,6 +52,10 @@
 		text-indent: 0em;
 		line-height: 1.25;
 		padding-left: .5em;
+	}
+	border-bottom: 1px solid $text-color;
+	&:last-child {
+		border-bottom: 0px;
 	}
 }
 

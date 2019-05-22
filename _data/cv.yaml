@@ -1,12 +1,16 @@
-name_title: Alex Chace, M.A.
-pronouns: they/them/theirs
+name_title: Alex Chace
+pronouns: they/them
 email: alex@frenziedstasis.org
 twitter: alreadyseveral
 github:  leximch
 linkedin: leximch
 blog: frenziedstasis.org
 bio: >-
-  I am an interdisciplinary scholar with interests in anarchism, cybernetics, queer/trans studies, horror films, psychoanalysis, and posthumanism.
+  I'm an interdisciplinary scholar/blogger with interests in anarchism, cybernetics, horror, psychoanalysis, posthumanism, xenofeminism, and more.
+
+posts:
+  - title: Hyper-Stratification and Cybernetic Capital
+    url: https://frenziedstasis.org/hyper-stratification-and-cybernetic-capital/
 
 education:
   - school: Georgia State University
@@ -39,10 +43,6 @@ guest_lectures:
     place: Georgia State University
     course: Sex, Culture, and Society
     time: 21 May 2019
-  - title: "Graduate Studies in Anthropology"
-    place: "Georgia State University"
-    course: "Senior Seminar in Anthropology"
-    time: 7 November 2018
   - title: "Transgender: From the Clinic to the Protest"
     place: Georgia State University
     course: Sex, Culture, and Society
