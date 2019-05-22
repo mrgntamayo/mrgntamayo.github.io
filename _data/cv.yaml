@@ -35,14 +35,19 @@ jobs:
     description: "Developed automated leads generation infrastructure in Python, using data from Zillow and other sources with customized text- and email-based outreach and preferential lead selection. I also assisted in updating company websites and customer-facing infrastructure in React, HTML, and CSS."
 
 guest_lectures:
-  - title: "Transgender: From the Clinic to the Protest"
+  - title: "Transgender in Sociohistorical Context"
     place: Georgia State University
     course: Sex, Culture, and Society
-    time: 15 May 2018
+    time: 21 May 2019
   - title: "Graduate Studies in Anthropology"
     place: "Georgia State University"
     course: "Senior Seminar in Anthropology"
     time: 7 November 2018
+  - title: "Transgender: From the Clinic to the Protest"
+    place: Georgia State University
+    course: Sex, Culture, and Society
+    time: 15 May 2018
+
 
 ta:
 - Introduction to Linguistic Anthropology (2).
