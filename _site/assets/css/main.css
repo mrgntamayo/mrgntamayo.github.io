@@ -125,7 +125,7 @@ ul {
 
 .nav {
   text-align: left;
-  text-transform: uppercase;
+  text-transform: lowercase;
   background-color: #f2dfe5;
   color: #000; }
 
