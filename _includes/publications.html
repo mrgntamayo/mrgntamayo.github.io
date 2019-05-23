@@ -1,13 +1,9 @@
 <h2 id="publications"><i class="fas fa-file-alt"></i> Publications</h2>
 
 <h3>Articles</h3>
-<ul class="bibliography">
 {% bibliography --file papers -q @article --max 3 %}
-</ul>
 
 <h3>Conference Papers</h3>
-<ul class="bibliography">
 {% bibliography --file papers -q @inproceedings --max 3 %}
-</ul>
 
 <a class="readmore" href="{{ site.url }}{{ site.baseurl }}/publications/">More</a>

@@ -32,7 +32,7 @@
 
 .item {
 	h5 {
-		letter-spacing: .5px;
+		letter-spacing: -0.5px;
 		font-weight: bold;
 		text-transform: none;
 	}
@@ -65,12 +65,17 @@
     list-style-type: none;
     margin-left: 2px;
     padding-left: 2px;
+    padding: 0 0 0 0;
 
     li {
-      margin: 2px 0;
-      position: relative;
-      padding: 2.5;
-      font-size: 95%;
+		margin: 2px 0;
+		position: relative;
+		padding-bottom: 0;
+		font-size: 95%;
+		border-bottom: 1px solid $text-color;
+		&:last-child {
+			border-bottom: 0px;
+		}
     }
 
     a {

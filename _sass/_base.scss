@@ -23,7 +23,7 @@ h6 {
   margin-top: 1em;
   margin-bottom: .5em;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: -1px;
 }
 
@@ -42,8 +42,8 @@ a:hover {
 }
 
 .wrapper {
-  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 3));
-  max-width:         calc(800px - (#{$horizontal-spacing-unit} * 3));
+  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2.5));
+  max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2.5));
   margin-right: auto;
   margin-left: auto;
   padding-right: $horizontal-spacing-unit;

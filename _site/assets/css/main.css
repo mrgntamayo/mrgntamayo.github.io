@@ -8,8 +8,8 @@
 
 body {
   color: #000;
-  background-color: #eacad5;
-  font-family: "PT Mono", monospace;
+  background-color: #f2dfe5;
+  font-family: "Inconsolata", monospace;
   line-height: 1.25;
   font-size: 100%; }
 
@@ -19,11 +19,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "PT Mono", monospace;
+  font-family: "Inconsolata", monospace;
   margin-top: 1em;
   margin-bottom: .5em;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: -1px; }
 
 h5 {
@@ -34,12 +34,12 @@ a {
   text-underline-position: under; }
 
 a:hover {
-  color: #eacad5;
+  color: #f2dfe5;
   background-color: #000; }
 
 .wrapper {
-  max-width: -webkit-calc(800px - (50px * 3));
-  max-width: calc(800px - (50px * 3));
+  max-width: -webkit-calc(800px - (50px * 2.5));
+  max-width: calc(800px - (50px * 2.5));
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -86,8 +86,8 @@ ul {
   font-weight: bold; }
 
 .top, .nav {
-  max-width: -webkit-calc(800px - (50px * 3));
-  max-width: calc(800px - (50px * 3));
+  max-width: -webkit-calc(800px - (50px * 2.5));
+  max-width: calc(800px - (50px * 2.5));
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -115,10 +115,10 @@ ul {
 
 .top {
   background-color: #000;
-  color: #eacad5;
+  color: #f2dfe5;
   /* Change the color of links on hover */ }
   .top a {
-    color: #eacad5; }
+    color: #f2dfe5; }
   .top a:hover {
     background-color: #000;
     color: white; }
@@ -126,12 +126,12 @@ ul {
 .nav {
   text-align: left;
   text-transform: uppercase;
-  background-color: #eacad5;
+  background-color: #f2dfe5;
   color: #000; }
 
 footer {
-  max-width: -webkit-calc(800px - (50px * 3));
-  max-width: calc(800px - (50px * 3));
+  max-width: -webkit-calc(800px - (50px * 2.5));
+  max-width: calc(800px - (50px * 2.5));
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -145,7 +145,7 @@ footer {
   border-bottom: 2px solid #000;
   line-height: 2;
   background-color: #000;
-  color: #eacad5; }
+  color: #f2dfe5; }
 
 .name {
   border-bottom: 10px solid black;
@@ -176,7 +176,7 @@ footer {
 .item {
   border-bottom: 1px solid #000; }
   .item h5 {
-    letter-spacing: .5px;
+    letter-spacing: -0.5px;
     font-weight: bold;
     text-transform: none; }
   .item p {
@@ -201,12 +201,16 @@ footer {
   margin-top: 0px;
   list-style-type: none;
   margin-left: 2px;
-  padding-left: 2px; }
+  padding-left: 2px;
+  padding: 0 0 0 0; }
   .bibliography li {
     margin: 2px 0;
     position: relative;
-    padding: 2.5;
-    font-size: 95%; }
+    padding-bottom: 0;
+    font-size: 95%;
+    border-bottom: 1px solid #000; }
+    .bibliography li:last-child {
+      border-bottom: 0px; }
   .bibliography a {
     text-decoration: none; }
   .bibliography:last-child {

@@ -1,29 +1,24 @@
-<li style="text-indent: -1em; padding-left: 1em;">
-	{% if entry.author != "Chace, Alexandra" %} {{ entry.author }}, {% endif %}
+<div class="item">
 	{% if entry.type == "inproceedings" %}
-		<strong>{{ entry.title }}</strong>,
-		{{ entry.date | date: '%-d %B %Y' }}, 
-		<em>{{ entry.eventtitle }}</em>, 
-		{{ entry.location }}.
-
+		<h5>{{ entry.title }}.</h5>
+		{% if entry.author != "Chace, Alexandra" %} <p class="time">{{ entry.author }}.</p> {% endif %}
+		<p class="time">{{ entry.date | date: '%-d %B %Y' }}.</p>
+		<p class="time">{{ entry.eventtitle }},</p>
+		<p class="time">{{ entry.location }}.</p>
 	{% elsif entry.type == "article" %}
-		<strong>{{ entry.title }}</strong>,
-		<em>{{ entry.journal }}</em>,
-		{% if entry.issue %}
-			{{ entry.issue }}, 
-		{% endif %}
-		{{ entry.publisher }}.
-
+		<h5>{{ entry.title }}.</h5>
+		{% if entry.author != "Chace, Alexandra" %} <p class="time">{{ entry.author }}.</p> {% endif %}
+		<p class="time">{{ entry.journal }}{% if entry.issue %}, {{ entry.issue }}{% endif %}.</p>
+		<p class="time">{{ entry.publisher }}.</p>
 	{% elsif entry.type == "thesis" %}
-		<strong>{{ entry.title }}</strong>, 
-		{{ entry.date | date: '%-d %B %Y' }}, 
-		{{ entry.institution }}.
+		<h5>{{ entry.title }}.</h5> 
+		<p class="time">{{ entry.date | date: '%-d %B %Y' }}.</p> 
+		<p class="time">{{ entry.institution }}.</p>
 	{% endif %}
-<br>
 {% if entry.pdf %}
-	<a href="{{ site.url }}{{ site.baseurl }}/{{entry.pdf}}">[PDF]</a> 
+	<p class="time"><a href="{{ site.url }}{{ site.baseurl }}/{{entry.pdf}}">[PDF]</a></p>
 {% endif %}
 {% if entry.html %}
-	<a href="{{entry.html}}">[HTML]</a> 
+	<p class="time"><a href="{{entry.html}}">[HTML]</a></p>
 {% endif %}
-</li>
+</div>
