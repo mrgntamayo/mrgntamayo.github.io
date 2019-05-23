@@ -97,8 +97,8 @@ ul {
   display: block;
   border-right: 5px solid black;
   border-left: 5px solid black;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2.5px solid #000;
+  border-bottom: 2.5px solid #000;
   line-height: 2; }
   .top a, .nav a {
     text-align: left;
@@ -124,7 +124,7 @@ ul {
     color: white; }
 
 .nav {
-  text-align: left;
+  text-align: center;
   text-transform: lowercase;
   background-color: #f2dfe5;
   color: #000; }
@@ -141,14 +141,18 @@ footer {
   display: block;
   border-right: 5px solid black;
   border-left: 5px solid black;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2.5px solid #000;
+  border-bottom: 2.5px solid #000;
   line-height: 2;
   background-color: #000;
   color: #f2dfe5; }
 
 .name {
   border-bottom: 10px solid black;
+  display: inline-block; }
+
+.section {
+  border-bottom: 5px solid black;
   display: inline-block; }
 
 .contact {
@@ -174,7 +178,7 @@ footer {
   padding-bottom: 10px; }
 
 .item {
-  border-bottom: 1px solid #000; }
+  border-bottom: 1.25px solid #000; }
   .item h5 {
     letter-spacing: -0.5px;
     font-weight: bold;
@@ -208,7 +212,7 @@ footer {
     position: relative;
     padding-bottom: 0;
     font-size: 95%;
-    border-bottom: 1px solid #000; }
+    border-bottom: 1.25px solid #000; }
     .bibliography li:last-child {
       border-bottom: 0px; }
   .bibliography a {
