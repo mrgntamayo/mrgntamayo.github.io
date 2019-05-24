@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{% if page.title and page.url != "/" %}{{ page.title | downcase }} | {% endif %}{{ site.title | upcase }}</title>
+  <title>{% if page.title and page.url != "/" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   {% if page.url == "/" %}
     <meta name="description" content="{{ site.description }}">
   {% else %}
