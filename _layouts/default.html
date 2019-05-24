@@ -1,4 +1,21 @@
+---
+layout: none
+---
+
 {% include head.html %}
+
+{% include top.html %}
+
+<div class="nav">
+	{% if layout.links %}
+		{% for link in layout.links %}
+			 <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>{% unless forloop.last %} | {% endunless %}
+		{% endfor %}
+	{% else %}
+		<a href="{{ site.url }}{{ site.baseurl }}/">Home</a>
+	{% endif %}
+</div>
+
 
 {{ content }}
 

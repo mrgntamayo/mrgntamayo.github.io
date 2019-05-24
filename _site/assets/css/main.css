@@ -82,7 +82,7 @@ ul {
 .readmore {
   text-align: right;
   margin-left: 95%;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: bold; }
 
 .top, .nav {
