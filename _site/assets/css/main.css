@@ -79,12 +79,6 @@ hr {
 ul {
   padding-bottom: 10px; }
 
-.readmore {
-  text-align: right;
-  margin-left: 95%;
-  text-transform: lowercase;
-  font-weight: bold; }
-
 .top, .nav {
   max-width: -webkit-calc(800px - (50px * 2.5));
   max-width: calc(800px - (50px * 2.5));
@@ -219,6 +213,12 @@ footer {
     text-decoration: none; }
   .bibliography:last-child {
     margin-bottom: 5px; }
+
+.readmore {
+  text-align: right;
+  margin-left: 95%;
+  text-transform: lowercase;
+  font-weight: bold; }
 
 @media screen and (max-width: 700px) {
   .column-left, .column-right {

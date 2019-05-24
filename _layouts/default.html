@@ -5,23 +5,13 @@
 
 {% include top.html %}
 
-<div class="nav">
-	{% if layout.links %}
-		{% for link in layout.links %}
-			{% assign first_letter = link.url | slice: 0 %}
-			{% if first_letter  == "#" %}
-				<a href="{{ link.url }}">{{ link.title }}</a>{% unless forloop.last %} | {% endunless %}
-			{% else %}
-				<a href="{{ site.url }}{{ site.baseurl }}/{{ link.url }}">{{ link.title }}</a>{% unless forloop.last %} | {% endunless %}
-			{% endif %}
-		{% endfor %}
-	{% else %}
-		<a href="{{ site.url }}{{ site.baseurl }}/">Home</a>
-	{% endif %}
-</div>
+{% include nav.html %}
 
-
-{{ content }}
+<body>
+	<div class="wrapper">
+		{{ content }}
+	</div>
+</body>
 
 {% include footer.html %}
 

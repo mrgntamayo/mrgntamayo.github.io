@@ -1,0 +1,14 @@
+<div class="nav">
+	{% if page.links %}
+		{% for link in page.links %}
+			{% assign first_letter = link.url | slice: 0 %}
+			{% if first_letter  == "#" %}
+				<a href="{{ link.url }}">{{ link.title }}</a>{% unless forloop.last %} | {% endunless %}
+			{% else %}
+				<a href="{{ site.url }}{{ site.baseurl }}/{{ link.url }}">{{ link.title }}</a>{% unless forloop.last %} | {% endunless %}
+			{% endif %}
+		{% endfor %}
+	{% else %}
+		<a href="{{ site.url }}{{ site.baseurl }}/">Home</a>
+	{% endif %}
+</div>
