@@ -1,0 +1,13 @@
+<h2 id="education" class="section">[1] Education</h2>
+<div class="items">
+    {% for degree in site.data.cv.education %}
+    <div class="item">
+        <h5>{{ degree.degree }}.</h5>
+        <p class="time">{{ degree.school }}.</p>
+        <p class="time">{{ degree.time }}.</p>
+        {% if degree.committee %}
+            <p class="description">Committee: {{ degree.committee }}.</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>

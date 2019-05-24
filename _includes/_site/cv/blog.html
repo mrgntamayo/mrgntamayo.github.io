@@ -1,0 +1,9 @@
+<h2><i class="fas fa-blog"></i> Blog</h2>
+
+<div class="items">
+    {% for post in site.data.cv.posts %}
+    <div class="item">
+        <h5><a href="{{ post.url }}">{{ post.title }}</a>.</h5>
+    </div>
+    {% endfor %}
+</div>
