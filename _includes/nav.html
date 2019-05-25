@@ -1,5 +1,5 @@
-<div class="nav">
-	{% if page.links %}
+{% if page.links %}
+	<div id="cvnav" class="nav">
 		{% for link in page.links %}
 			{% assign first_letter = link.url | slice: 0 %}
 			{% if first_letter  == "#" %}
@@ -8,7 +8,9 @@
 				<a href="{{ site.url }}{{ site.baseurl }}/{{ link.url }}">{{ link.title }}</a>{% unless forloop.last %} | {% endunless %}
 			{% endif %}
 		{% endfor %}
-	{% else %}
+	</div>
+{% else %}
+	<div class="nav">
 		<a href="{{ site.url }}{{ site.baseurl }}/">Home</a>
-	{% endif %}
-</div>
+	</div>
+{% endif %}
