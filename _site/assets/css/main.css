@@ -27,7 +27,7 @@ h6 {
   letter-spacing: -1px; }
 
 h5 {
-  font-size: 95%; }
+  font-size: 100%; }
 
 a {
   color: #000;
@@ -178,7 +178,7 @@ footer {
     font-weight: bold;
     text-transform: none; }
   .item p {
-    font-size: 95%;
+    font-size: 100%;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: .5em;
@@ -205,7 +205,7 @@ footer {
     margin: 2px 0;
     position: relative;
     padding-bottom: 0;
-    font-size: 95%;
+    font-size: 100%;
     border-bottom: 1.25px solid #000; }
     .bibliography li:last-child {
       border-bottom: 0px; }
