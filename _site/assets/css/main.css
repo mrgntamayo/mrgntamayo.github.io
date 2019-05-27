@@ -275,7 +275,7 @@ footer {
   .nav {
     background-color: #000;
     color: #f2dfe5;
-    border-bottom: 2px solid #f2dfe5; } }
+    border-bottom: 2px solid #e3bbc8; } }
 @media (prefers-color-scheme: light) {
   body {
     background-color: #f2dfe5;
