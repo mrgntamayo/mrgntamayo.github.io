@@ -235,67 +235,67 @@ footer {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #1a1a1a;
-    color: #f6e8ec; }
+    color: #f9f1f4; }
 
   a {
-    color: #f6e8ec; }
+    color: #f9f1f4; }
 
   a:hover {
     color: #1a1a1a;
-    background-color: #f6e8ec; }
+    background-color: #f9f1f4; }
 
   hr {
-    border-color: #f6e8ec;
-    color: #f6e8ec;
-    border: solid 1px #f6e8ec;
-    background-color: #f6e8ec; }
+    border-color: #f9f1f4;
+    color: #f9f1f4;
+    border: solid 1px #f9f1f4;
+    background-color: #f9f1f4; }
 
   footer {
-    border-right: 5px solid #f6e8ec;
-    border-left: 5px solid #f6e8ec;
-    border-top: 2.5px solid #f6e8ec;
-    border-bottom: 2.5px solid #f6e8ec;
+    border-right: 5px solid #f9f1f4;
+    border-left: 5px solid #f9f1f4;
+    border-top: 2.5px solid #f9f1f4;
+    border-bottom: 2.5px solid #f9f1f4;
     line-height: 2;
-    background-color: #f6e8ec;
+    background-color: #f9f1f4;
     color: #1a1a1a; }
 
   .wrapper {
-    border-right: 5px solid #f6e8ec;
-    border-left: 5px solid #f6e8ec; }
+    border-right: 5px solid #f9f1f4;
+    border-left: 5px solid #f9f1f4; }
 
   .name {
-    border-bottom: 10px solid #f6e8ec; }
+    border-bottom: 10px solid #f9f1f4; }
 
   .section {
-    border-bottom: 5px solid #f6e8ec;
+    border-bottom: 5px solid #f9f1f4;
     display: inline-block; }
 
   .item {
-    border-bottom: 1.25px solid #f6e8ec; }
+    border-bottom: 1.25px solid #f9f1f4; }
 
   .bibliography li {
-    border-bottom: 1.25px solid #f6e8ec; }
+    border-bottom: 1.25px solid #f9f1f4; }
 
   .top, .nav {
-    border-right: 5px solid #f6e8ec;
-    border-left: 5px solid #f6e8ec;
-    border-top: 2.5px solid #f6e8ec;
-    border-bottom: 2.5px solid #f6e8ec; }
+    border-right: 5px solid #f9f1f4;
+    border-left: 5px solid #f9f1f4;
+    border-top: 2.5px solid #f9f1f4;
+    border-bottom: 2.5px solid #f9f1f4; }
 
   .top {
-    background-color: #f6e8ec;
+    background-color: #f9f1f4;
     color: #1a1a1a; }
     .top a {
       color: #1a1a1a; }
     .top a:hover {
-      background-color: #f6e8ec;
+      background-color: #f9f1f4;
       color: #595959; }
 
   .nav {
     text-align: center;
     text-transform: lowercase;
     background-color: #1a1a1a;
-    color: #f6e8ec; } }
+    color: #f9f1f4; } }
 @media (prefers-color-scheme: light) {
   body {
     background-color: #f2dfe5;
