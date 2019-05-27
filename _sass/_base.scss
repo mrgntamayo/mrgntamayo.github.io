@@ -6,8 +6,8 @@
 }
 
 body {
-  color: $text-color;
-  background-color: $background-color;
+  color: $dark-color;
+  background-color: $light-color;
   font-family: $font-family;
   line-height: $line-height;
   font-size: 100%;
@@ -32,13 +32,27 @@ h5 {
 }
 
 a {
-  color: $text-color;
+  color: $dark-color;
   text-underline-position: under;
 }
 
 a:hover {
-  color: $background-color;
-  background-color: $text-color;
+  color: $light-color;
+  background-color: $dark-color;
+}
+
+hr {
+  border-color: $dark-color;
+  border: solid 1px $dark-color;
+  color: $dark-color;
+  background-color: $dark-color;
+  padding-top: 10px;
+  margin-left: -$horizontal-spacing-unit;
+  margin-right: -$horizontal-spacing-unit;
+}
+
+ul {
+  padding-bottom: $vertical-spacing-unit/2;
 }
 
 .wrapper {
@@ -51,8 +65,8 @@ a:hover {
   padding-top: $vertical-spacing-unit;
   padding-bottom: $vertical-spacing-unit;
   display: block;
-  border-right: 5px solid black;
-  border-left: 5px solid black;
+  border-right: 5px solid $dark-color;
+  border-left: 5px solid $dark-color;
 }
 
 /* Clear floats after the columns */
@@ -73,18 +87,4 @@ a:hover {
   width: 50%;
   display: inline-lock;
   float: right;
-}
-
-hr {
-  border-color: $text-color;
-  border: solid 1px $text-color;
-  color: $text-color;
-  background-color: $text-color;
-  padding-top: 10px;
-  margin-left: -$horizontal-spacing-unit;
-  margin-right: -$horizontal-spacing-unit;
-}
-
-ul {
-  padding-bottom: $vertical-spacing-unit/2;
 }

@@ -37,6 +37,18 @@ a:hover {
   color: #f2dfe5;
   background-color: #000; }
 
+hr {
+  border-color: #000;
+  border: solid 1px #000;
+  color: #000;
+  background-color: #000;
+  padding-top: 10px;
+  margin-left: -50px;
+  margin-right: -50px; }
+
+ul {
+  padding-bottom: 10px; }
+
 .wrapper {
   max-width: -webkit-calc(800px - (50px * 2.5));
   max-width: calc(800px - (50px * 2.5));
@@ -47,8 +59,8 @@ a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;
-  border-right: 5px solid black;
-  border-left: 5px solid black; }
+  border-right: 5px solid #000;
+  border-left: 5px solid #000; }
 
 /* Clear floats after the columns */
 .row:after {
@@ -68,18 +80,6 @@ a:hover {
   display: inline-lock;
   float: right; }
 
-hr {
-  border-color: #000;
-  border: solid 1px #000;
-  color: #000;
-  background-color: #000;
-  padding-top: 10px;
-  margin-left: -50px;
-  margin-right: -50px; }
-
-ul {
-  padding-bottom: 10px; }
-
 .top, .nav {
   max-width: -webkit-calc(800px - (50px * 2.5));
   max-width: calc(800px - (50px * 2.5));
@@ -90,8 +90,8 @@ ul {
   overflow: hidden;
   text-align: left;
   display: block;
-  border-right: 5px solid black;
-  border-left: 5px solid black;
+  border-right: 5px solid #000;
+  border-left: 5px solid #000;
   border-top: 2.5px solid #000;
   border-bottom: 2.5px solid #000;
   line-height: 2; }
@@ -111,6 +111,7 @@ ul {
 .top {
   background-color: #000;
   color: #f2dfe5;
+  border-radius: 5px 5px 0px 0px;
   /* Change the color of links on hover */ }
   .top a {
     color: #f2dfe5; }
@@ -134,8 +135,9 @@ footer {
   overflow: hidden;
   text-align: center;
   display: block;
-  border-right: 5px solid black;
-  border-left: 5px solid black;
+  border-radius: 0 0 5px 5px;
+  border-right: 5px solid #000;
+  border-left: 5px solid #000;
   border-top: 2.5px solid #000;
   border-bottom: 2.5px solid #000;
   line-height: 2;
@@ -143,11 +145,13 @@ footer {
   color: #f2dfe5; }
 
 .name {
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #000;
+  border-radius: 0 0 1.25px 1.25px;
   display: inline-block; }
 
 .section {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #000;
+  border-radius: 0 0 1.25px 1.25px;
   display: inline-block; }
 
 .contact {
@@ -228,3 +232,71 @@ footer {
 @media screen and (max-width: 750px) {
   #cvnav {
     display: none; } }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #f6e8ec; }
+
+  a {
+    color: #f6e8ec; }
+
+  a:hover {
+    color: #1a1a1a;
+    background-color: #f6e8ec; }
+
+  hr {
+    border-color: #f6e8ec;
+    color: #f6e8ec;
+    border: solid 1px #f6e8ec;
+    background-color: #f6e8ec; }
+
+  footer {
+    border-right: 5px solid #f6e8ec;
+    border-left: 5px solid #f6e8ec;
+    border-top: 2.5px solid #f6e8ec;
+    border-bottom: 2.5px solid #f6e8ec;
+    line-height: 2;
+    background-color: #f6e8ec;
+    color: #1a1a1a; }
+
+  .wrapper {
+    border-right: 5px solid #f6e8ec;
+    border-left: 5px solid #f6e8ec; }
+
+  .name {
+    border-bottom: 10px solid #f6e8ec; }
+
+  .section {
+    border-bottom: 5px solid #f6e8ec;
+    display: inline-block; }
+
+  .item {
+    border-bottom: 1.25px solid #f6e8ec; }
+
+  .bibliography li {
+    border-bottom: 1.25px solid #f6e8ec; }
+
+  .top, .nav {
+    border-right: 5px solid #f6e8ec;
+    border-left: 5px solid #f6e8ec;
+    border-top: 2.5px solid #f6e8ec;
+    border-bottom: 2.5px solid #f6e8ec; }
+
+  .top {
+    background-color: #f6e8ec;
+    color: #1a1a1a; }
+    .top a {
+      color: #1a1a1a; }
+    .top a:hover {
+      background-color: #f6e8ec;
+      color: #595959; }
+
+  .nav {
+    text-align: center;
+    text-transform: lowercase;
+    background-color: #1a1a1a;
+    color: #f6e8ec; } }
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f2dfe5;
+    color: #000; } }

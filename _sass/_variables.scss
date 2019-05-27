@@ -1,7 +1,9 @@
-$text-color: #000;
+$dark-color: #000;
 $secondary-color: #ece8f4;
-$background-color: #eacad5;
-$background-color: #f2dfe5;
+$light-color: #f2dfe5;
+
+$darkmode-dark-color: lighten($dark-color, 10%);
+$darkmode-light-color: lighten($light-color, 2.5%);
 
 $font-family: 'Inconsolata', monospace;
 $line-height: 1.25 !default;
