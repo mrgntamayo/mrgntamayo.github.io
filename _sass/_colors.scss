@@ -1,0 +1,87 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $darkmode-dark-color;
+        color: $darkmode-light-color;
+    }
+
+    a {color: $darkmode-light-color;}
+
+    a:hover {
+        color: $darkmode-dark-color;
+        background-color: $darkmode-light-color;
+    }
+
+    hr {
+        border-color: $darkmode-light-color;
+        color: $darkmode-light-color;
+        border: solid 1px $darkmode-light-color;
+        background-color: $darkmode-light-color;
+    }
+
+    footer {
+        border-right: 5px solid $darkmode-light-color;
+        border-left: 5px solid $darkmode-light-color;
+        border-top: 2.5px solid $darkmode-light-color;
+        border-bottom: 2.5px solid $darkmode-light-color;
+        line-height: 2;
+        background-color: $darkmode-light-color;
+        color: $darkmode-dark-color;
+    }
+
+    .wrapper {
+        border-right: 5px solid $darkmode-light-color;
+        border-left: 5px solid $darkmode-light-color;
+    }
+
+    .name {
+        border-bottom: 10px solid $darkmode-light-color;
+    }
+
+    .section {
+        border-bottom: 5px solid $darkmode-light-color;
+        display: inline-block;
+    }
+
+    .item {
+        border-bottom: 1.25px solid $darkmode-light-color;
+    }
+
+    .bibliography {
+        li {
+            border-bottom: 1.25px solid $darkmode-light-color;
+        }
+    }
+
+    .top, .nav {
+        border-right: 5px solid $darkmode-light-color;
+        border-left: 5px solid $darkmode-light-color;
+        border-top: 2.5px solid $darkmode-light-color;
+        border-bottom: 2.5px solid $darkmode-light-color;
+    }
+
+    .top {
+        background-color: $darkmode-light-color;
+        color: $darkmode-dark-color;
+        a {color: $darkmode-dark-color;}
+        a:hover {
+            background-color: $darkmode-light-color;
+            color: lighten($darkmode-dark-color, 25%);
+        }
+    }
+
+    .nav {
+        text-align: center;
+        text-transform: lowercase;
+        background-color: $darkmode-dark-color;
+        color: $darkmode-light-color;
+    }
+
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
+
+
