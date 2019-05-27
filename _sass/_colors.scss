@@ -1,82 +1,77 @@
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: $darkmode-dark-color;
-        color: $darkmode-light-color;
+    ::selection, ::-moz-selection {
+        background: $light-color;
     }
 
-    a {color: $darkmode-light-color;}
+    body {
+        background-color: $dark-color;
+        color: $light-color;
+    }
+
+    a {color: $light-color;}
 
     a:hover {
-        color: $darkmode-dark-color;
-        background-color: $darkmode-light-color;
+        color: $dark-color;
+        background-color: $light-color;
     }
 
     hr {
-        border-color: $darkmode-light-color;
-        color: $darkmode-light-color;
-        border: solid 1px $darkmode-light-color;
-        background-color: $darkmode-light-color;
+        border-color: $border-color;
+        color: $border-color;
+        border: solid 0px $border-color;
+        background-color: $border-color;
     }
 
     footer {
-        border-right: 5px solid $darkmode-light-color;
-        border-left: 5px solid $darkmode-light-color;
-        border-top: 2.5px solid $darkmode-light-color;
-        border-bottom: 2.5px solid $darkmode-light-color;
+        border-top: $border-size/2 solid $border-color;
+        border-bottom: $border-size/2 solid $border-color;
         line-height: 2;
-        background-color: $darkmode-light-color;
-        color: $darkmode-dark-color;
+        background-color: $border-color;
+        color: $dark-color;
     }
 
     .wrapper {
-        border-right: 5px solid $darkmode-light-color;
-        border-left: 5px solid $darkmode-light-color;
+        border: $border-size solid $border-color;
     }
 
     .name {
-        border-bottom: 10px solid $darkmode-light-color;
+        border-bottom: $border-size * 2 solid $border-color;
     }
 
     .section {
-        border-bottom: 5px solid $darkmode-light-color;
-        display: inline-block;
+        border-bottom: $border-size solid $border-color;
     }
 
     .item {
-        border-bottom: 1.25px solid $darkmode-light-color;
+        border-bottom: $border-size/4 solid $border-color;
     }
 
     .bibliography {
         li {
-            border-bottom: 1.25px solid $darkmode-light-color;
+            border-bottom: $border-size/4 solid $border-color;
         }
     }
 
-    .top, .nav {
-        border-right: 5px solid $darkmode-light-color;
-        border-left: 5px solid $darkmode-light-color;
-        border-top: 2.5px solid $darkmode-light-color;
-        border-bottom: 2.5px solid $darkmode-light-color;
-    }
-
     .top {
-        background-color: $darkmode-light-color;
-        color: $darkmode-dark-color;
-        a {color: $darkmode-dark-color;}
+        background-color: $border-color;
+        color: $dark-color;
+        border-bottom: $border-size solid $border-color;
+
+        a {color: $dark-color;}
+
         a:hover {
-            background-color: $darkmode-light-color;
-            color: lighten($darkmode-dark-color, 25%);
+            background-color: $border-color;
+            color: lighten($dark-color, 20%);
         }
     }
 
     .nav {
-        text-align: center;
-        text-transform: lowercase;
-        background-color: $darkmode-dark-color;
-        color: $darkmode-light-color;
+        background-color: $dark-color;
+        color: $light-color;
+        border-bottom: $border-size/2 solid $light-color;
     }
-
 }
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: $light-color;

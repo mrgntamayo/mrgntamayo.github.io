@@ -1,12 +1,13 @@
 .name {
-    border-bottom: 10px solid $dark-color;
-    border-radius: 0 0 1.25px 1.25px;
+    border-bottom: $border-size*2 solid $dark-color;
+    border-radius: 0 0 $border-size/4 $border-size/4;
     display: inline-block;
+    padding-top: $vertical-spacing-unit;
 }
 
 .section {
-	border-bottom: 5px solid $dark-color;
-    border-radius: 0 0 1.25px 1.25px;
+	border-bottom: $border-size solid $dark-color;
+    border-radius: 0 0 $border-size/4 $border-size/4;
 	display: inline-block;
 }
 
@@ -60,7 +61,8 @@
 		line-height: 1.25;
 		padding-left: .5em;
 	}
-	border-bottom: 1.25px solid $dark-color;
+	border-bottom: $border-size/4 solid $dark-color;
+	border-radius: 0 0 $border-size/4 $border-size/4;
 	&:last-child {
 		border-bottom: 0px;
 	}
@@ -79,7 +81,8 @@
 		position: relative;
 		padding-bottom: 0;
 		font-size: 100%;
-		border-bottom: 1.25px solid $dark-color;
+		border-bottom: $border-size/4 solid $dark-color;
+		border-radius: 0 0 $border-size/4 $border-size/4;
 		&:last-child {
 			border-bottom: 0px;
 		}

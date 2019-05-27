@@ -1,13 +1,9 @@
 $dark-color: #000;
 $secondary-color: #ece8f4;
 $light-color: #f2dfe5;
+$border-color: darken($light-color, 10%);
 
-
-$darkmode-dark-color: lighten($dark-color, 25%);
-$darkmode-light-color: lighten($light-color, 0%);
-
-$darkmode-dark-color: darken($light-color, 80%);
-$darkmode-light-color: lighten($dark-color, 90%);
+$border-size: 4px;
 
 $font-family: 'Inconsolata', monospace;
 $line-height: 1.25 !default;
