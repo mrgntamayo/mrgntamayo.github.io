@@ -234,68 +234,68 @@ footer {
     display: none; } }
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #404040;
-    color: #f2dfe5; }
+    background-color: #cd849b;
+    color: black; }
 
   a {
-    color: #f2dfe5; }
+    color: black; }
 
   a:hover {
-    color: #404040;
-    background-color: #f2dfe5; }
+    color: #cd849b;
+    background-color: black; }
 
   hr {
-    border-color: #f2dfe5;
-    color: #f2dfe5;
-    border: solid 1px #f2dfe5;
-    background-color: #f2dfe5; }
+    border-color: black;
+    color: black;
+    border: solid 1px black;
+    background-color: black; }
 
   footer {
-    border-right: 5px solid #f2dfe5;
-    border-left: 5px solid #f2dfe5;
-    border-top: 2.5px solid #f2dfe5;
-    border-bottom: 2.5px solid #f2dfe5;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
     line-height: 2;
-    background-color: #f2dfe5;
-    color: #404040; }
+    background-color: black;
+    color: #cd849b; }
 
   .wrapper {
-    border-right: 5px solid #f2dfe5;
-    border-left: 5px solid #f2dfe5; }
+    border-right: 5px solid black;
+    border-left: 5px solid black; }
 
   .name {
-    border-bottom: 10px solid #f2dfe5; }
+    border-bottom: 10px solid black; }
 
   .section {
-    border-bottom: 5px solid #f2dfe5;
+    border-bottom: 5px solid black;
     display: inline-block; }
 
   .item {
-    border-bottom: 1.25px solid #f2dfe5; }
+    border-bottom: 1.25px solid black; }
 
   .bibliography li {
-    border-bottom: 1.25px solid #f2dfe5; }
+    border-bottom: 1.25px solid black; }
 
   .top, .nav {
-    border-right: 5px solid #f2dfe5;
-    border-left: 5px solid #f2dfe5;
-    border-top: 2.5px solid #f2dfe5;
-    border-bottom: 2.5px solid #f2dfe5; }
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black; }
 
   .top {
-    background-color: #f2dfe5;
-    color: #404040; }
+    background-color: black;
+    color: #cd849b; }
     .top a {
-      color: #404040; }
+      color: #cd849b; }
     .top a:hover {
-      background-color: #f2dfe5;
-      color: gray; }
+      background-color: black;
+      color: #f2dfe5; }
 
   .nav {
     text-align: center;
     text-transform: lowercase;
-    background-color: #404040;
-    color: #f2dfe5; } }
+    background-color: #cd849b;
+    color: black; } }
 @media (prefers-color-scheme: light) {
   body {
     background-color: #f2dfe5;
