@@ -70,6 +70,7 @@ a:hover {
 
 hr {
   border-color: #000;
+  border: solid 1px #000;
   color: #000;
   background-color: #000;
   padding-top: 10px;
