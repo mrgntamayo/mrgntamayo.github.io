@@ -17,18 +17,18 @@ thumbnail: alex_chace.png
 ---
 
 {% include cv/about.html %}
-<hr>
+<hr class="separator">
 
 {% include cv/education.html %}
-<hr>
+<hr class="separator">
 
 {% include cv/employment.html %}
-<hr>
+<hr class="separator">
 
 {% include cv/publications.html %}
-<hr>
+<hr class="separator">
 
 {% include cv/teaching.html %}
-<hr>
+<hr class="separator">
 
 {% include cv/projects.html %}

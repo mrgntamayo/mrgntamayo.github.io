@@ -1,9 +1,9 @@
-$dark-color: #000;
+$dark-color: #222;
 $secondary-color: #ece8f4;
 $light-color: #f2dfe5;
-$border-color: darken($light-color, 10%);
+$border-color: $light-color;
 
-$border-size: 4px;
+$border-size: 5px;
 
 $font-family: 'Inconsolata', monospace;
 $line-height: 1.25 !default;
@@ -11,6 +11,6 @@ $heading-font-family: 'Inconsolata', monospace;
 $heading-font-weight: 700 !default;
 $heading-line-height: 1.25 !default;
 
-$horizontal-spacing-unit: 50px;
-$vertical-spacing-unit: 20px;
-$phone-horizontal-spacing-unit: 10px;
+$horizontal-spacing-unit: $border-size * 10;
+$vertical-spacing-unit: $border-size * 5;
+$phone-horizontal-spacing-unit: $border-size * 2;

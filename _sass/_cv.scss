@@ -1,28 +1,23 @@
-.name {
-    border-bottom: $border-size*2 solid $dark-color;
-    border-radius: 0 0 $border-size/4 $border-size/4;
+.heading {
     display: inline-block;
-    padding-top: $vertical-spacing-unit;
 }
 
 .section {
-	border-bottom: $border-size solid $dark-color;
-    border-radius: 0 0 $border-size/4 $border-size/4;
-	display: inline-block;
+    display: inline-block;
 }
 
 .contact {
-	margin: 0;
-	padding: 0;
-	padding-bottom: $vertical-spacing-unit;
-	line-height: 1.5;
-	.column {
-		float: left;
-		width: 1.5em;
-		padding: 0;
-		margin: 0;
-		vertical-align: middle;
-	}
+    margin: 0;
+    padding: 0;
+    padding-bottom: $vertical-spacing-unit;
+    line-height: 1.5;
+    .column {
+        float: left;
+        width: 1.5em;
+        padding: 0;
+        margin: 0;
+        vertical-align: middle;
+    }
     .fas, .fab {
         vertical-align: middle;
         text-align: left;
@@ -31,41 +26,41 @@
 }
 
 .bio {
-	padding-bottom: $vertical-spacing-unit/2;
+    padding-bottom: $vertical-spacing-unit/2;
 }
 
 .items {
-	padding-bottom: $vertical-spacing-unit/2;
+    padding-bottom: $vertical-spacing-unit/2;
 }
 
 .item {
-	h5 {
-		letter-spacing: -0.5px;
-		font-weight: bold;
-		text-transform: none;
-	}
-	p {
-		font-size: 100%;
-		padding-top: 0;
-		padding-bottom: 0;
-		margin-bottom: .5em;
-		margin-top: .5em;
-	}
-	.time {
-		text-indent: 0em;
-		padding-left: .5em;
-		line-height: .9;
-	}
-	.description {
-		text-indent: 0em;
-		line-height: 1.25;
-		padding-left: .5em;
-	}
-	border-bottom: $border-size/4 solid $dark-color;
-	border-radius: 0 0 $border-size/4 $border-size/4;
-	&:last-child {
-		border-bottom: 0px;
-	}
+    h5 {
+        letter-spacing: -0.5px;
+        font-weight: bold;
+        text-transform: none;
+    }
+    p {
+        font-size: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: .5em;
+        margin-top: .5em;
+    }
+    .time {
+        text-indent: 0em;
+        padding-left: .5em;
+        line-height: .9;
+    }
+    .description {
+        text-indent: 0em;
+        line-height: 1.25;
+        padding-left: .5em;
+    }
+    border-bottom: $border-size/4 solid $dark-color;
+    border-radius: 0 0 $border-size/4 $border-size/4;
+    &:last-child {
+        border-bottom: 0px;
+    }
 }
 
 .bibliography {
@@ -77,28 +72,24 @@
     padding: 0 0 0 0;
 
     li {
-		margin: 2px 0;
-		position: relative;
-		padding-bottom: 0;
-		font-size: 100%;
-		border-bottom: $border-size/4 solid $dark-color;
-		border-radius: 0 0 $border-size/4 $border-size/4;
-		&:last-child {
-			border-bottom: 0px;
-		}
+        margin: 2px 0;
+        position: relative;
+        padding-bottom: 0;
+        font-size: 100%;
+        border-radius: 0 0 $border-size $border-size/4;
+        &:last-child {
+            border-bottom: 0px;
+        }
     }
 
-    a {
-	    text-decoration: none;
-    }
-	&:last-child {
-		margin-bottom: $vertical-spacing-unit/4;
-	}
+    a { text-decoration: none; }
+    
+    &:last-child { margin-bottom: $vertical-spacing-unit/4; }
 }
 
 .readmore {
-  text-align: right;
-  margin-left: 95%;
-  text-transform: lowercase;
-  font-weight: bold;
+    text-align: right;
+    margin-left: 95%;
+    text-transform: lowercase;
+    font-weight: bold;
 }
