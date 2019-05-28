@@ -32,22 +32,14 @@ footer {
     }
 }
 
-.heading {
-    border-bottom: $border-size * 2 solid $dark-color;
-}
+.heading { border-bottom: $border-size * 2 solid $dark-color; }
 
-.section {
-    border-bottom: $border-size solid $dark-color;
-}
+.section { border-bottom: $border-size solid $dark-color; }
 
-.item {
-    border-bottom: $border-size/4 solid $dark-color;
-}
+.item { border-bottom: $border-size/4 solid $dark-color; }
 
 .bibliography {
-    li {
-        border-bottom: $border-size/4 solid $dark-color;
-    }
+    li { border-bottom: $border-size/4 solid $dark-color; }
 }
 
 .top {
@@ -109,22 +101,14 @@ footer {
         }
     }
 
-    .heading {
-        border-bottom: $border-size*2 solid $border-color;
-    }
+    .heading { border-bottom: $border-size*2 solid $border-color; }
 
-    .section {
-        border-bottom: $border-size solid $border-color;
-    }
+    .section { border-bottom: $border-size solid $border-color; }
 
-    .item {
-        border-bottom: $border-size/4 solid $border-color;
-    }
+    .item { border-bottom: $border-size/4 solid $border-color; }
 
     .bibliography {
-        li {
-            border-bottom: $border-size/4 solid $border-color;
-        }
+        li { border-bottom: $border-size/4 solid $border-color; }
     }
 
     .top {

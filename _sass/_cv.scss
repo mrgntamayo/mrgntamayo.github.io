@@ -56,11 +56,8 @@
         line-height: 1.25;
         padding-left: .5em;
     }
-    border-bottom: $border-size/4 solid $dark-color;
     border-radius: 0 0 $border-size/4 $border-size/4;
-    &:last-child {
-        border-bottom: 0px;
-    }
+    &:last-child { border-bottom: 0px; }
 }
 
 .bibliography {
@@ -76,10 +73,8 @@
         position: relative;
         padding-bottom: 0;
         font-size: 100%;
-        border-radius: 0 0 $border-size $border-size/4;
-        &:last-child {
-            border-bottom: 0px;
-        }
+        border-radius: 0 0 $border-size/4 $border-size/4;
+        &:last-child { border-bottom: 0px; }
     }
 
     a { text-decoration: none; }
