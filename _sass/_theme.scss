@@ -74,7 +74,7 @@ footer {
 
 
 
-@media (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: dark) {
     ::selection, ::-moz-selection {
         background: $light-color;
         color: $dark-color;
@@ -148,11 +148,7 @@ footer {
     }
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: $light-color;
-    color: $dark-color;
-  }
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
 }
 
 

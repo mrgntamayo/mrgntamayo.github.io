@@ -54,7 +54,7 @@ footer {
   color: #222;
   border-bottom: 2.5px solid #222; }
 
-@media (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: dark) {
   ::selection, ::-moz-selection {
     background: #f2dfe5;
     color: #222; }
@@ -110,10 +110,6 @@ footer {
     background-color: #222;
     color: #f2dfe5;
     border-bottom: 2.5px solid #f2dfe5; } }
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #f2dfe5;
-    color: #222; } }
 body {
   font-family: "Inconsolata", monospace;
   line-height: 1.25;
