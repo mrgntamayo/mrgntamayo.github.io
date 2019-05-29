@@ -23,7 +23,8 @@ footer: 2019. Designed by <a href="http://alexchace.com" target="_blank" rel="no
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://morgantamayo.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-gtag: 
+gtag: UA-141073666-1
+
 
 permalink: /:title/
 
