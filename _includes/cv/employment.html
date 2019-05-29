@@ -1,11 +1,15 @@
-<h2 id="employment" class="section">[2] Work</h2>
+<h2 id="employment" class="section">Employment</h2>
 <div class="items">
     {% for job in site.data.cv.jobs %}
     <div class="item">
         <h5>{{ job.title }}.</h5>
         <p class="time">{{ job.place }}.</p>
         <p class="time">{{ job.time }}.</p>
-        <p class="description">{{ job.description }}</p>
+        <ul class="description">
+        	{% for task in job.tasks %}
+        		<li class="description">{{ task }}</li>
+    		{% endfor %}
+    	</ul>
     </div>
     {% endfor %}
 </div>

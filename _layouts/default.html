@@ -3,14 +3,24 @@
 
 {% include head.html %}
 
+<body>
+{% include top.html %}
 <div class="wrapper">
-	{% include top.html %}
+	<div class="sidebar">
+		{% include cv/about.html %}
+		<hr class="separator">
+		{% include cv/education.html %}
+		<hr class="separator">
+		{% include cv/skills.html %}
+	</div>
 
-	{% include nav.html %}
-	<body>
+	<div class="main-content">
 		{{ content }}
-	</body>
-	{% include footer.html %}
+	</div>
+
 </div>
+</body>
+
+{% include footer.html %}
 
 {% include scripts.html %}

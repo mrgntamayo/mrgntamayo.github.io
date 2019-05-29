@@ -1,16 +1,32 @@
-$dark-color: #222;
+
 $secondary-color: #ece8f4;
-$light-color: #f2dfe5;
+$light-color: #f2f2f2;
 $border-color: $light-color;
 
-$border-size: 5px;
+$dark-color: #222;
+$theme-color: #0d86d2;
 
-$font-family: 'Inconsolata', monospace;
+
+$border-size: 2.5px;
+
+$font-family: 'Source Sans Pro', sans-serif;
 $line-height: 1.25 !default;
-$heading-font-family: 'Inconsolata', monospace;
+$heading-font-family: 'Source Sans Pro', sans-serif;
 $heading-font-weight: 700 !default;
 $heading-line-height: 1.25 !default;
 
 $horizontal-spacing-unit: $border-size * 10;
 $vertical-spacing-unit: $border-size * 5;
 $phone-horizontal-spacing-unit: $border-size * 2;
+
+
+/* MTamayo variables */
+$theme-color: #0d86d2;
+$text-color: #4a3f41;
+$text-color-secondary: #545E6C;
+$text-grey: #97AAC3;
+$divider: #e8e8e8;
+$lighter-grey: #ccc;
+$darker-grey: #666;
+$smoky-white: #f5f5f5;
+$heart: #fb866a;

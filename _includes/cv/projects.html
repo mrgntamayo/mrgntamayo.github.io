@@ -1,10 +1,14 @@
-<h2 id="projects" class="section">[5] Projects</h2>
+<h2 id="projects" class="section">Projects</h2>
 <div class="items">
     {% for project in site.data.cv.projects %}
     <div class="item">
         <h5>{{ project.title }}.</h5>
-        <p class="time"><a href="{{ project.url }}">{{ project.url }}</a>.</p>
-        <p class="description">{{ project.description }}</p>
+        <p class="time">{{ project.place }}.</p>
+        <ul class="description">
+        	{% for task in project.tasks %}
+        		<li class="description">{{ task }}</li>
+    		{% endfor %}
+    	</ul>
     </div>
     {% endfor %}
 </div>

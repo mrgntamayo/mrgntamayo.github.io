@@ -13,11 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Alex Chace
-email: alex@frenziedstasis.org
+title: Morgan Tamayo
+email: mrgntamayo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Ph.D. student, Moving Image Studies, Georgia State University.
-footer: Alex Chace.
+  Data Analyst in Atlanta, Ga.
+footer: 2019. Designed by <a href="http://alexchace.com" target="_blank" rel="nofollow">Alex Chace</a>.
+
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alexchace.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -30,23 +31,3 @@ permalink: /:title/
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-scholar
-
-
-scholar:
-  last_name: Chace
-
-  style: modern-language-association
-  
-  locale: en
-  
-  sort_by: year,date
-  
-  order: descending
-  bibliography_template: new_bib
-
-  replace_strings: true
-  join_strings: true
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details

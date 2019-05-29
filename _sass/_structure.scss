@@ -1,58 +1,62 @@
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2.5));
-    max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2.5));
+    max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: $horizontal-spacing-unit;
-    padding-left: $horizontal-spacing-unit;
-    padding-top: $vertical-spacing-unit;
-    padding-bottom: $vertical-spacing-unit;
-    display: block;
-    border-radius: $border-size $border-size $border-size $border-size;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+
+    .sidebar {
+        flex: 35%;
+        display: inline-block;
+        background-color: $theme-color;
+        color: $light-color;
+        padding-left: $horizontal-spacing-unit;
+        padding-right: $horizontal-spacing-unit;
+        padding-top: 0px;
+    }
+
+    .main-content {
+        flex: 65%;
+        display: inline-block;
+        background-color: $light-color;
+        padding-left: $horizontal-spacing-unit;
+        padding-right: $horizontal-spacing-unit;
+        padding-top: $vertical-spacing-unit*4;
+    }
 
     .separator {
         padding-top: $border-size*2;
         margin-left: -$horizontal-spacing-unit;
         margin-right: -$horizontal-spacing-unit;
     }
+}
 
-    .bar {
-        margin-left: -$horizontal-spacing-unit;
-        margin-right: -$horizontal-spacing-unit;
-
-        line-height: 2;
-        display: block;
-        overflow: hidden;
-        a {
-            text-align: left;
-            padding: 0px 0px 0px 0px;
-            font-size: 16px;
-            text-decoration: none;
-        }
-        .column {
-            display: inline-block;
-            float: left;
-            width: 33%;
-            padding: 0;
-            margin-left: $horizontal-spacing-unit;
-            margin-right: $horizontal-spacing-unit;
-        }
-        .fas, .fab {
-            vertical-align: middle;
-        }
+.bar {
+    line-height: 2;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    a {
+        text-align: left;
+        padding: 0px 0px 0px 0px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .column {
+        display: inline-block;
+        float: left;
+        width: 33%;
+        padding: 0;
+        margin-left: $horizontal-spacing-unit;
+        margin-right: $horizontal-spacing-unit;
+    }
+    .fas, .fab {
+        vertical-align: middle;
     }
 }
 
-.top { margin-top: -$vertical-spacing-unit; }
-
-.nav {
-    text-align: center;
-    text-transform: lowercase;
-    display: block;
-}
-
 footer {
-    margin-top: $vertical-spacing-unit;
     margin-bottom: -$vertical-spacing-unit;
     text-align: center;
     display: block;

@@ -1,6 +1,5 @@
-name_title: Alex Chace
-pronouns: they/them
-email: alex@frenziedstasis.org
+name_title: Morgan Tamayo
+email: mrgntamayo@gmail.com
 twitter: alreadyseveral
 github:  leximch
 linkedin: leximch
@@ -8,51 +7,69 @@ blog: frenziedstasis.org
 bio: >-
   I'm an interdisciplinary scholar/blogger with interests in anarchism, cybernetics, horror, psychoanalysis, posthumanism, xenofeminism, and more.
 
-posts:
-  - title: Hyper-Stratification and Cybernetic Capital
-    url: https://frenziedstasis.org/hyper-stratification-and-cybernetic-capital/
+skills:
+  tools:
+    - SAS
+    - R
+    - SQL
+    - Python
+    - Excel
+  methods:
+    - Advanced Regression Binary Classification
+    - Data Minding
+    - K-means Clustering
 
 education:
-  - school: Georgia State University
-    time: Aug 19-May 2023
-    degree: PhD, Moving Image Studies
-  - school: Georgia State University
-    time: Aug 17-May 2019
-    degree: MA, Anthropology
-    committee: Cassandra White (chair), Jennifer Patico, and Megan Sinnott
-  - school: Georgia State University
-    time: Aug 13-May 2017
-    degree: BA, Applied Linguistics
+  - degree: MS in Applied Statistics
+    school: Kennesaw State University
+    time: Aug 2017-Aug 2019
+    description: |
+      Describe your study here.
+
+  - degree: BS in Mathematics
+    school: Kennesaw State University
+    time: Aug 2012-Dec 2016
+    description: |
+      Describe your study here.
 
 jobs:
-  - title: "Graduate Research Assistant"
-    place: "Global Health Discourses Project"
-    time: "Jan-May 2019"
-    description: "Employed R and igraph to visualize a social network of global health organizations scraped on organization websites."
-  - title: "Graduate Teaching Assistant"
-    place: "GSU Dept. of Anthropology"
-    time: "Aug 17-Dec 2018"
-    description: "Taught break-out sessions and guest-lectured in several introductory Anthropology courses. I also graded papers, tests, and other assignments."
-  - title: "Growth Marketing Intern"
-    place: "SimpleShowing, Inc"
-    time: "July-Nov 2017"
-    description: "Developed automated leads generation infrastructure in Python, using data from Zillow and other sources with customized text- and email-based outreach and preferential lead selection. I also assisted in updating company websites and customer-facing infrastructure in React, HTML, and CSS."
-
-guest_lectures:
-  - title: "Transgender in Sociohistorical Context"
-    place: Georgia State University
-    course: Sex, Culture, and Society
-    time: 21 May 2019
-  - title: "Transgender: From the Clinic to the Protest"
-    place: Georgia State University
-    course: Sex, Culture, and Society
-    time: 15 May 2018
-
-ta:
-- Introduction to Linguistic Anthropology (2).
-- Introduction to Anthropology.
+  - title: Contractor/Graduate Assistant
+    time: May 2018-Present
+    place: Blue Cross Blue Shield of Tennessee, Chattanooga, TN
+    tasks:
+      - Cleaned and modeled physician data in Python.
+      - Elucidated new factors affecting physician expenses in perinatal care.
+  - title: Contractor/Graduate Assistant
+    time: Aug 2018-Dec 2018
+    place: Unnamed Financial Company, Atlanta, GA
+    tasks:
+      - Cleaned car loan payment data using R.
+      - Developed model to predict which customers would default or pay their loans off in full.
+      - Delivered framework for creating risk likelihood scores for customers.
+  - title: Graduate Assistant
+    time: Jan 2018-May 2018
+    place: Blue Cross Blue Shield of Tennessee, Chattanooga, TN
+    tasks:
+      - Analyzed Chemistry students' performance data.
+      - Provided analysis of textbook visual representations for a Kennesaw State University professor.
 
 projects:
-  - title: Post
-    url: http://github.com/leximch/post
-    description: A lightweight package manager for GNU/Linux, written in Ruby.
+  - title: Solar Panel Analysis
+    place: Southern Company of Atlanta, GA
+    tasks:
+      - Lead team using SAS to analyze solar panel and weather data to recommend ideal panel-washing intervals.
+      - Presented recommendations showing efficiency improvements in scheduling washes to Southern Company.
+  - title: Weather Panel Analysis
+    place: Southern Company of Atlanta, GA
+    tasks:
+      - Employed SQL to join airport weather data scraped via R with cleaned and organized customer conversion data.
+      - Created SAS visualizations (maps and graphs) for final presentation to Southern Company executives.
+      - Presented findings detailing correlations between weather data and customer conversion rates.
+  - title: Clickstream Analysis
+    place: The Home Depot of Atlanta, GA
+    tasks:
+      - Worked with .5 terabytes of clickstream data to find insights about customer behavior.
+      - Cooperated with The Home Depot on data dictionary definitions.
+      - Merged tabled and selected variables using SQL
+      - Utilized survival analysis for insight into variables leading to customers leaving the THD website.
+      - Presented winning findings and suggestions to The Home Depot executives.

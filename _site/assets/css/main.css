@@ -1,26 +1,25 @@
+/* MTamayo variables */
 ::selection, ::-moz-selection {
-  background: #f2dfe5;
+  background: #0d86d2;
   color: #222; }
 
 body {
-  background-color: #f2dfe5;
+  background-color: #06395a;
   color: #222; }
 
 a {
   color: #222; }
 
 a:hover {
-  color: #f2dfe5;
+  color: #0d86d2;
   background-color: #222; }
 
 footer {
-  border-top: 2.5px solid #222;
-  border-bottom: 2.5px solid #222;
-  background-color: #222;
-  color: #f2dfe5; }
+  color: #f2f2f2; }
 
 .wrapper {
-  border: 5px solid #222; }
+  background-color: #0d86d2;
+  border: 2.5px solid #222; }
   .wrapper .separator {
     border-color: #222;
     color: #222;
@@ -28,90 +27,29 @@ footer {
     background-color: #222; }
 
 .heading {
-  border-bottom: 10px solid #222; }
+  border-bottom: 5px solid #222; }
 
 .section {
-  border-bottom: 5px solid #222; }
-
-.item {
-  border-bottom: 1.25px solid #222; }
-
-.bibliography li {
-  border-bottom: 1.25px solid #222; }
-
-.top {
-  background-color: #222;
-  color: #f2dfe5;
-  border-bottom: 5px solid #222; }
-  .top a {
-    color: #f2dfe5; }
-  .top a:hover {
-    background-color: #222;
-    color: white; }
-
-.nav {
-  background-color: #f2dfe5;
-  color: #222;
   border-bottom: 2.5px solid #222; }
 
-@media only screen and (prefers-color-scheme: dark) {
-  ::selection, ::-moz-selection {
-    background: #f2dfe5;
-    color: #222; }
+.item {
+  border-bottom: 0.625px solid #222; }
 
-  body {
+.bibliography li {
+  border-bottom: 0.625px solid #222; }
+
+.bar {
+  background-color: #222;
+  color: #f2f2f2;
+  border: 2.5px solid #222; }
+  .bar a {
+    color: #0d86d2; }
+  .bar a:hover {
     background-color: #222;
-    color: #f2dfe5; }
+    color: #51b5f4; }
 
-  a {
-    color: #f2dfe5; }
-
-  a:hover {
-    color: #222;
-    background-color: #f2dfe5; }
-
-  footer {
-    border-top: 2.5px solid #f2dfe5;
-    border-bottom: 2.5px solid #f2dfe5;
-    background-color: #f2dfe5;
-    color: #222; }
-
-  .wrapper {
-    border: 5px solid #f2dfe5; }
-    .wrapper .separator {
-      border-color: #f2dfe5;
-      color: #f2dfe5;
-      border: solid 0px #f2dfe5;
-      background-color: #f2dfe5; }
-
-  .heading {
-    border-bottom: 10px solid #f2dfe5; }
-
-  .section {
-    border-bottom: 5px solid #f2dfe5; }
-
-  .item {
-    border-bottom: 1.25px solid #f2dfe5; }
-
-  .bibliography li {
-    border-bottom: 1.25px solid #f2dfe5; }
-
-  .top {
-    background-color: #f2dfe5;
-    color: #222;
-    border-bottom: 5px solid #f2dfe5; }
-    .top a {
-      color: #222; }
-    .top a:hover {
-      background-color: #f2dfe5;
-      color: #555555; }
-
-  .nav {
-    background-color: #222;
-    color: #f2dfe5;
-    border-bottom: 2.5px solid #f2dfe5; } }
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.25;
   font-size: 100%; }
 
@@ -121,15 +59,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inconsolata", monospace;
+  font-family: "Source Sans Pro", sans-serif;
   margin-top: 1em;
   margin-bottom: .5em;
   font-weight: bold;
-  text-transform: lowercase;
-  letter-spacing: 0px; }
+  text-transform: uppercase; }
 
 h1 {
-  padding-top: 25px; }
+  padding-top: 12.5px; }
 
 h5 {
   font-size: 100%; }
@@ -138,55 +75,57 @@ a {
   text-underline-position: under; }
 
 ul {
-  padding-bottom: 12.5px; }
+  padding-bottom: 6.25px; }
 
 .wrapper {
-  max-width: -webkit-calc(800px - (50px * 2.5));
-  max-width: calc(800px - (50px * 2.5));
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  display: block;
-  border-radius: 5px 5px 5px 5px; }
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex; }
+  .wrapper .sidebar {
+    flex: 35%;
+    display: inline-block;
+    background-color: #0d86d2;
+    color: #f2f2f2;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0px; }
+  .wrapper .main-content {
+    flex: 65%;
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px; }
   .wrapper .separator {
-    padding-top: 10px;
-    margin-left: -50px;
-    margin-right: -50px; }
-  .wrapper .bar {
-    margin-left: -50px;
-    margin-right: -50px;
-    line-height: 2;
-    display: block;
-    overflow: hidden; }
-    .wrapper .bar a {
-      text-align: left;
-      padding: 0px 0px 0px 0px;
-      font-size: 16px;
-      text-decoration: none; }
-    .wrapper .bar .column {
-      display: inline-block;
-      float: left;
-      width: 33%;
-      padding: 0;
-      margin-left: 50px;
-      margin-right: 50px; }
-    .wrapper .bar .fas, .wrapper .bar .fab {
-      vertical-align: middle; }
+    padding-top: 5px;
+    margin-left: -25px;
+    margin-right: -25px; }
 
-.top {
-  margin-top: -25px; }
-
-.nav {
-  text-align: center;
-  text-transform: lowercase;
-  display: block; }
+.bar {
+  line-height: 2;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto; }
+  .bar a {
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    font-size: 16px;
+    text-decoration: none; }
+  .bar .column {
+    display: inline-block;
+    float: left;
+    width: 33%;
+    padding: 0;
+    margin-left: 25px;
+    margin-right: 25px; }
+  .bar .fas, .bar .fab {
+    vertical-align: middle; }
 
 footer {
-  margin-top: 25px;
-  margin-bottom: -25px;
+  margin-bottom: -12.5px;
   text-align: center;
   display: block; }
 
@@ -217,7 +156,7 @@ footer {
 .contact {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 12.5px;
   line-height: 1.5; }
   .contact .column {
     float: left;
@@ -231,13 +170,13 @@ footer {
     margin-top: 2.5px; }
 
 .bio {
-  padding-bottom: 12.5px; }
+  padding-bottom: 6.25px; }
 
 .items {
-  padding-bottom: 12.5px; }
+  padding-bottom: 6.25px; }
 
 .item {
-  border-radius: 0 0 1.25px 1.25px; }
+  border-radius: 0 0 0.625px 0.625px; }
   .item h5 {
     letter-spacing: -0.5px;
     font-weight: bold;
@@ -271,13 +210,13 @@ footer {
     position: relative;
     padding-bottom: 0;
     font-size: 100%;
-    border-radius: 0 0 1.25px 1.25px; }
+    border-radius: 0 0 0.625px 0.625px; }
     .bibliography li:last-child {
       border-bottom: 0px; }
   .bibliography a {
     text-decoration: none; }
   .bibliography:last-child {
-    margin-bottom: 6.25px; }
+    margin-bottom: 3.125px; }
 
 .readmore {
   text-align: right;
@@ -304,3 +243,6 @@ footer {
   h5,
   h6 {
     letter-spacing: -1px; } }
+@media screen and (max-width: 700px) {
+  .wrapper, .bar {
+    flex-direction: column; } }
