@@ -15,10 +15,6 @@ a:hover {
     background-color: $dark-color;
 }
 
-footer {
-    color: $light-color;
-}
-
 .wrapper {
     background-color: $theme-color;
     border: $border-size solid $dark-color;
@@ -27,6 +23,16 @@ footer {
         color: $dark-color;
         border: solid 0px $dark-color;
         background-color: $dark-color;
+    }
+
+    .sidebar {
+        ::selection, ::-moz-selection {
+            background: $dark-color;
+            color: $light-color;
+        }
+
+        a {color: $light-color;}
+
     }
 }
 
@@ -46,7 +52,7 @@ footer {
     color: $light-color;
     border: $border-size solid $dark-color;
 
-    a {color: $theme-color;}
+    a {color: $light-color;}
 
     a:hover {
         background-color: $dark-color;

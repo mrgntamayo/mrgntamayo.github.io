@@ -18,17 +18,12 @@ h6 {
 }
 
 h1 {
-    padding-top: $vertical-spacing-unit;
+    padding-top: 0;
+    margin-top: $vertical-spacing-unit*2;
+    font-weight: 900;
+    font-size: 400%;
 }
 
-h5 {
-    font-size: 100%;
-}
+h5 { font-size: 100%; }
 
-a {
-    text-underline-position: under;
-}
-
-ul {
-    padding-bottom: $vertical-spacing-unit/2;
-}
+a { text-underline-position: under; }

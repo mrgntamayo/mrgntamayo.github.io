@@ -1,9 +1,7 @@
-.heading {
-    display: inline-block;
-}
+.heading, .section, { display: inline-block; }
 
-.section {
-    display: inline-block;
+.heading {
+    
 }
 
 .contact {
@@ -55,6 +53,7 @@
         text-indent: 0em;
         line-height: 1.25;
         padding-left: .5em;
+        list-style-position: inside;
     }
     border-radius: 0 0 $border-size/4 $border-size/4;
     &:last-child { border-bottom: 0px; }

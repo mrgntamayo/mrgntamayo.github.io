@@ -1,39 +1,22 @@
 @media screen and (max-width: 700px) {
-    .column-left, .column-right {
-        float: none;
-        width: 100%;
+    .wrapper, .bar {   
+        flex-direction: column;
     }
-}
-
-@media screen and (max-width: 750px) {
-    #cvnav {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 750px) {
     .wrapper {
-        .bar {
-            .column {
-                margin-left: 4px;
-                margin-right: 4px;
+        .sidebar {
+            #lastsidehr {
+                display: block;
+                margin-bottom: 0;
             }
         }
+        .main-content {
+            padding-top: 0;
+        }
     }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        letter-spacing: -1px;
+    .bar {
+        .column {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
     }
-}
-
-
-@media screen and (max-width: 700px) {
-  .wrapper, .bar {   
-    flex-direction: column;
-  }
 }

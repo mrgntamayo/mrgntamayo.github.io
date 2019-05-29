@@ -1,4 +1,3 @@
-/* MTamayo variables */
 ::selection, ::-moz-selection {
   background: #0d86d2;
   color: #222; }
@@ -14,36 +13,38 @@ a:hover {
   color: #0d86d2;
   background-color: #222; }
 
-footer {
-  color: #f2f2f2; }
-
 .wrapper {
   background-color: #0d86d2;
-  border: 2.5px solid #222; }
+  border: 4px solid #222; }
   .wrapper .separator {
     border-color: #222;
     color: #222;
     border: solid 0px #222;
     background-color: #222; }
+  .wrapper .sidebar ::selection, .wrapper .sidebar ::-moz-selection {
+    background: #222;
+    color: #f2f2f2; }
+  .wrapper .sidebar a {
+    color: #f2f2f2; }
 
 .heading {
-  border-bottom: 5px solid #222; }
+  border-bottom: 8px solid #222; }
 
 .section {
-  border-bottom: 2.5px solid #222; }
+  border-bottom: 4px solid #222; }
 
 .item {
-  border-bottom: 0.625px solid #222; }
+  border-bottom: 1px solid #222; }
 
 .bibliography li {
-  border-bottom: 0.625px solid #222; }
+  border-bottom: 1px solid #222; }
 
 .bar {
   background-color: #222;
   color: #f2f2f2;
-  border: 2.5px solid #222; }
+  border: 4px solid #222; }
   .bar a {
-    color: #0d86d2; }
+    color: #f2f2f2; }
   .bar a:hover {
     background-color: #222;
     color: #51b5f4; }
@@ -66,16 +67,16 @@ h6 {
   text-transform: uppercase; }
 
 h1 {
-  padding-top: 12.5px; }
+  padding-top: 0;
+  margin-top: 40px;
+  font-weight: 900;
+  font-size: 400%; }
 
 h5 {
   font-size: 100%; }
 
 a {
   text-underline-position: under; }
-
-ul {
-  padding-bottom: 6.25px; }
 
 .wrapper {
   max-width: 1000px;
@@ -89,20 +90,22 @@ ul {
     display: inline-block;
     background-color: #0d86d2;
     color: #f2f2f2;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 0px; }
+    .wrapper .sidebar #lastsidehr {
+      display: none; }
   .wrapper .main-content {
     flex: 65%;
     display: inline-block;
     background-color: #f2f2f2;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 50px; }
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px; }
   .wrapper .separator {
-    padding-top: 5px;
-    margin-left: -25px;
-    margin-right: -25px; }
+    padding-top: 8px;
+    margin-left: -40px;
+    margin-right: -40px; }
 
 .bar {
   line-height: 2;
@@ -119,23 +122,24 @@ ul {
     float: left;
     width: 33%;
     padding: 0;
-    margin-left: 25px;
-    margin-right: 25px; }
+    margin-left: 40px;
+    margin-right: 40px; }
   .bar .fas, .bar .fab {
     vertical-align: middle; }
 
+.top {
+  border-radius: 4px 4px 0 0; }
+
 footer {
-  margin-bottom: -12.5px;
   text-align: center;
-  display: block; }
+  display: block;
+  border-radius: 0 0 4px 4px; }
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
-  clear: both;
-  padding: 0;
-  margin: 0; }
+  clear: both; }
 
 .column-left, .column-right {
   width: 50%;
@@ -147,16 +151,13 @@ footer {
 .column-left {
   float: left; }
 
-.heading {
-  display: inline-block; }
-
-.section {
+.heading, .section {
   display: inline-block; }
 
 .contact {
   margin: 0;
   padding: 0;
-  padding-bottom: 12.5px;
+  padding-bottom: 20px;
   line-height: 1.5; }
   .contact .column {
     float: left;
@@ -170,13 +171,13 @@ footer {
     margin-top: 2.5px; }
 
 .bio {
-  padding-bottom: 6.25px; }
+  padding-bottom: 10px; }
 
 .items {
-  padding-bottom: 6.25px; }
+  padding-bottom: 10px; }
 
 .item {
-  border-radius: 0 0 0.625px 0.625px; }
+  border-radius: 0 0 1px 1px; }
   .item h5 {
     letter-spacing: -0.5px;
     font-weight: bold;
@@ -194,7 +195,8 @@ footer {
   .item .description {
     text-indent: 0em;
     line-height: 1.25;
-    padding-left: .5em; }
+    padding-left: .5em;
+    list-style-position: inside; }
   .item:last-child {
     border-bottom: 0px; }
 
@@ -210,13 +212,13 @@ footer {
     position: relative;
     padding-bottom: 0;
     font-size: 100%;
-    border-radius: 0 0 0.625px 0.625px; }
+    border-radius: 0 0 1px 1px; }
     .bibliography li:last-child {
       border-bottom: 0px; }
   .bibliography a {
     text-decoration: none; }
   .bibliography:last-child {
-    margin-bottom: 3.125px; }
+    margin-bottom: 5px; }
 
 .readmore {
   text-align: right;
@@ -225,24 +227,15 @@ footer {
   font-weight: bold; }
 
 @media screen and (max-width: 700px) {
-  .column-left, .column-right {
-    float: none;
-    width: 100%; } }
-@media screen and (max-width: 750px) {
-  #cvnav {
-    display: none; } }
-@media screen and (max-width: 750px) {
-  .wrapper .bar .column {
-    margin-left: 4px;
-    margin-right: 4px; }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    letter-spacing: -1px; } }
-@media screen and (max-width: 700px) {
   .wrapper, .bar {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .wrapper .sidebar #lastsidehr {
+    display: block;
+    margin-bottom: 0; }
+  .wrapper .main-content {
+    padding-top: 0; }
+
+  .bar .column {
+    margin-left: 4px;
+    margin-right: 4px; } }

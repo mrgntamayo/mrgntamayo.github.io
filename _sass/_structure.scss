@@ -14,6 +14,10 @@
         padding-left: $horizontal-spacing-unit;
         padding-right: $horizontal-spacing-unit;
         padding-top: 0px;
+
+        #lastsidehr {
+            display: none;
+        }
     }
 
     .main-content {
@@ -56,10 +60,14 @@
     }
 }
 
+.top {
+    border-radius: $border-size $border-size 0 0;
+}
+
 footer {
-    margin-bottom: -$vertical-spacing-unit;
     text-align: center;
     display: block;
+    border-radius: 0 0 $border-size $border-size;
 }
 
 /* Clear floats after the columns */
@@ -67,8 +75,6 @@ footer {
     content: "";
     display: table;
     clear: both;
-    padding: 0;
-    margin: 0;
 }
 
 .column-left, .column-right {
