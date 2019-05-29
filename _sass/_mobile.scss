@@ -7,6 +7,8 @@
         flex-direction: column;
     }
     .wrapper {
+        background-color: $theme-color;
+        color: $light-color;
         .sidebar {
             border-right: 0;
             #lastsidehr {
@@ -25,4 +27,8 @@
             margin-right: 4px;
         }
     }
+}
+
+@media screen and (max-width: 700px) and (prefers-color-scheme: dark) {
+    .wrapper { background-color: lighten($dark-theme-color, 5%); color: $light-color;}
 }

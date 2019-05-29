@@ -9,8 +9,6 @@
     .sidebar {
         flex: 35%;
         display: inline-block;
-        background-color: $theme-color;
-        color: $light-color;
         padding-left: $horizontal-spacing-unit;
         padding-right: $horizontal-spacing-unit;
         padding-top: 0px;
@@ -23,7 +21,6 @@
     .main-content {
         flex: 65%;
         display: inline-block;
-        background-color: $light-color;
         padding-left: $horizontal-spacing-unit;
         padding-right: $horizontal-spacing-unit;
         padding-top: $vertical-spacing-unit*4;
@@ -60,9 +57,7 @@
 
 .top {
     border-radius: $border-size $border-size 0 0;
-    a {
-        padding: 5px;
-    }
+    a { padding: 5px; }
 }
 
 footer {
