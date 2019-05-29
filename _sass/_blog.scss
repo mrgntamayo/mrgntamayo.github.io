@@ -1,0 +1,31 @@
+.blog-heading {
+    text-align: center;
+    font-size: 300%;
+    padding-top: 0;
+    margin-top: -$vertical-spacing-unit;
+    margin-bottom: $vertical-spacing-unit;
+    display: block;
+    width: 45%;
+    margin: auto;
+}
+
+.blog_nav {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: $vertical-spacing-unit*2;
+}
+
+.post-list {
+    margin: $border-size;
+    padding: 0;
+    list-style: none;
+
+    > li {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        a {
+            text-decoration: underline;
+        }
+    }
+}

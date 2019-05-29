@@ -56,17 +56,20 @@ jobs:
 
 projects:
   - title: Solar Panel Analysis
+    time: Fall 2018
     place: Southern Company of Atlanta, GA
     tasks:
       - Lead team using SAS to analyze solar panel and weather data to recommend ideal panel-washing intervals.
       - Presented recommendations showing efficiency improvements in scheduling washes to Southern Company.
   - title: Weather Panel Analysis
+    time: Fall 2017
     place: Southern Company of Atlanta, GA
     tasks:
       - Employed SQL to join airport weather data scraped via R with cleaned and organized customer conversion data.
       - Created SAS visualizations (maps and graphs) for final presentation to Southern Company executives.
       - Presented findings detailing correlations between weather data and customer conversion rates.
   - title: Clickstream Analysis
+    time: Summer 2016
     place: The Home Depot of Atlanta, GA
     tasks:
       - Worked with .5 terabytes of clickstream data to find insights about customer behavior.

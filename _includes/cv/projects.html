@@ -4,6 +4,7 @@
     <div class="item">
         <h5>{{ project.title }}.</h5>
         <p class="time">{{ project.place }}.</p>
+        <p class="time">{{ project.time }}.</p>
         <ul class="description">
         	{% for task in project.tasks %}
         		<li class="description">{{ task }}</li>
