@@ -1,9 +1,14 @@
 @media screen and (max-width: 700px) {
+    .column-left, .column-right {
+        float: none;
+        width: 100%;
+    }
     .wrapper, .bar {   
         flex-direction: column;
     }
     .wrapper {
         .sidebar {
+            border-right: 0;
             #lastsidehr {
                 display: block;
                 margin-bottom: 0;
@@ -11,6 +16,7 @@
         }
         .main-content {
             padding-top: 0;
+            border-left: 0;
         }
     }
     .bar {

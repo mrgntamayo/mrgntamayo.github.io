@@ -1,6 +1,6 @@
 ::selection, ::-moz-selection {
   background: #0d86d2;
-  color: #222; }
+  color: #f2f2f2; }
 
 body {
   background-color: #06395a;
@@ -21,11 +21,15 @@ a:hover {
     color: #222;
     border: solid 0px #222;
     background-color: #222; }
-  .wrapper .sidebar ::selection, .wrapper .sidebar ::-moz-selection {
-    background: #222;
-    color: #f2f2f2; }
-  .wrapper .sidebar a {
-    color: #f2f2f2; }
+  .wrapper .sidebar {
+    border-right: #222 solid 2px; }
+    .wrapper .sidebar ::selection, .wrapper .sidebar ::-moz-selection {
+      background: #222;
+      color: #f2f2f2; }
+    .wrapper .sidebar a {
+      color: #f2f2f2; }
+  .wrapper .main-content {
+    border-left: #222 solid 2px; }
 
 .heading {
   border-bottom: 8px solid #222; }
@@ -34,9 +38,6 @@ a:hover {
   border-bottom: 4px solid #222; }
 
 .item {
-  border-bottom: 1px solid #222; }
-
-.bibliography li {
   border-bottom: 1px solid #222; }
 
 .bar {
@@ -77,6 +78,9 @@ h5 {
 
 a {
   text-underline-position: under; }
+
+ul {
+  padding-left: 5px; }
 
 .wrapper {
   max-width: 1000px;
@@ -145,13 +149,10 @@ footer {
 
 .column-left, .column-right {
   width: 50%;
-  display: inline-block; }
-
-.column-right {
-  float: right; }
-
-.column-left {
-  float: left; }
+  display: inline-block;
+  text-align: left; }
+  .column-left ul, .column-right ul {
+    list-style-position: inside; }
 
 .heading, .section {
   display: inline-block; }
@@ -202,41 +203,22 @@ footer {
   .item:last-child {
     border-bottom: 0px; }
 
-.bibliography {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  list-style-type: none;
-  margin-left: 2px;
-  padding-left: 2px;
-  padding: 0 0 0 0; }
-  .bibliography li {
-    margin: 2px 0;
-    position: relative;
-    padding-bottom: 0;
-    font-size: 100%;
-    border-radius: 0 0 1px 1px; }
-    .bibliography li:last-child {
-      border-bottom: 0px; }
-  .bibliography a {
-    text-decoration: none; }
-  .bibliography:last-child {
-    margin-bottom: 5px; }
-
-.readmore {
-  text-align: right;
-  margin-left: 95%;
-  text-transform: lowercase;
-  font-weight: bold; }
-
 @media screen and (max-width: 700px) {
+  .column-left, .column-right {
+    float: none;
+    width: 100%; }
+
   .wrapper, .bar {
     flex-direction: column; }
 
-  .wrapper .sidebar #lastsidehr {
-    display: block;
-    margin-bottom: 0; }
+  .wrapper .sidebar {
+    border-right: 0; }
+    .wrapper .sidebar #lastsidehr {
+      display: block;
+      margin-bottom: 0; }
   .wrapper .main-content {
-    padding-top: 0; }
+    padding-top: 0;
+    border-left: 0; }
 
   .bar .column {
     margin-left: 4px;

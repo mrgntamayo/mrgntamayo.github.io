@@ -1,6 +1,6 @@
 ::selection, ::-moz-selection {
     background: $theme-color;
-    color: $dark-color;
+    color: $light-color;
 }
 
 body {
@@ -26,13 +26,18 @@ a:hover {
     }
 
     .sidebar {
+        border-right: $dark-color solid $border-size/2;
+
         ::selection, ::-moz-selection {
             background: $dark-color;
             color: $light-color;
         }
 
         a {color: $light-color;}
+    }
 
+    .main-content {
+        border-left: $dark-color solid $border-size/2;
     }
 }
 
@@ -41,11 +46,6 @@ a:hover {
 .section { border-bottom: $border-size solid $dark-color; }
 
 .item { border-bottom: $border-size/4 solid $dark-color; }
-
-.bibliography {
-    li { border-bottom: $border-size/4 solid $dark-color; }
-}
-
 
 .bar {
     background-color: $dark-color;

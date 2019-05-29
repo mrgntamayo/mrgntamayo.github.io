@@ -1,15 +1,20 @@
 <h2 id="skills" class="section">Skills</h2>
 
+<div class="row">
+    <div class="column-left">
 <h3>Tools</h3>
 <ul>
 	{% for tool in site.data.cv.skills.tools %}
 		<li>{{ tool }}.</li>
 	{% endfor %}
 </ul>
-
+    </div>
+    <div class="column-right" style="float: right;"">
 <h3>Methods</h3>
 <ul>
     {% for method in site.data.cv.skills.methods %}
         <li>{{ method }}.</li>
     {% endfor %}
 </ul>
+    </div>
+    </div>

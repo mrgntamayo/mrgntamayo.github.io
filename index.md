@@ -13,7 +13,7 @@ links:
     url: "#teaching"
   - title: "Projects"
     url: "#projects"
-thumbnail: alex_chace.png
+thumbnail: index.png
 ---
 
 {% include cv/employment.html %}

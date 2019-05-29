@@ -55,14 +55,11 @@
         margin-left: $horizontal-spacing-unit;
         margin-right: $horizontal-spacing-unit;
     }
-    .fas, .fab {
-        vertical-align: middle;
-    }
+    .fas, .fab { vertical-align: middle;}
 }
 
 .top {
     border-radius: $border-size $border-size 0 0;
-
     a {
         padding: 5px;
     }
@@ -84,8 +81,6 @@ footer {
 .column-left, .column-right {
     width: 50%;
     display: inline-block;
+    text-align: left;
+    ul { list-style-position: inside; }
 }
-
-.column-right { float: right; }
-
-.column-left { float: left; }

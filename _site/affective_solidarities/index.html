@@ -60,7 +60,7 @@
 		<div class="column">
 		</div>
 		<div class="column" style="float: right; text-align: right;">
-			<a href="https://www.linkedin.com/in/placeholder" alt="Linkedin"><i class="fab fa-linkedin-in fa-lg"></i></a>
+			<a href="https://www.linkedin.com/in/morgan-tamayo" alt="Linkedin"><i class="fab fa-linkedin-in fa-lg"></i></a>
 			<a href="https://github.com/placeholder" alt="GitHub"><i class="fab fa-github fa-lg"></i></a>
 			<a href= "http://localhost:4000/morgantamayo.com/assets/cv.pdf" alt="Curriculum Vitae PDF"><i class="fas fa-file-pdf fa-lg"></i></a>
 		</div>
@@ -72,16 +72,16 @@
 
 <div class="contact">
     <div class="row">
+        <div class="column"><i class="fas fa-phone"></i></div>
+        <div class="column"><a href="tel:678-799-6666">678-799-6666</a></div>
+    </div>
+    <div class="row">
         <div class="column"><i class="fas fa-envelope"></i></div>
         <div class="column"><a href="mailto:mrgntamayo@gmail.com">mrgntamayo@gmail.com</a></div>
     </div>
     <div class="row">
         <div class="column"><i class="fab fa-twitter"></i></div>
         <div class="column"><a href="http://twitter.com/placeholder">placeholder</a></div>
-    </div>
-    <div class="row">
-        <div class="column"><i class="fas fa-blog"></i></div>
-        <div class="column"><a href="https://placeholder">placeholder</a></div>
     </div>
 </div>
 
@@ -109,6 +109,8 @@
 	<hr class="separator">
 	<h2 id="skills" class="section">Skills</h2>
 
+<div class="row">
+    <div class="column-left">
 <h3>Tools</h3>
 <ul>
 	
@@ -123,17 +125,20 @@
 		<li>Excel.</li>
 	
 </ul>
-
+    </div>
+    <div class="column-right" style="float: right;"">
 <h3>Methods</h3>
 <ul>
     
         <li>Advanced Regression Binary Classification.</li>
     
-        <li>Data Minding.</li>
+        <li>Data Mining.</li>
     
         <li>K-means Clustering.</li>
     
 </ul>
+    </div>
+    </div>
 	<hr id="lastsidehr" class="separator">
 </div>
 	<div class="main-content">
@@ -209,19 +214,3 @@
 	    <i class="far fa-copyright fa-sm"></i> 2019. Designed by <a href="http://alexchace.com" target="_blank" rel="nofollow">Alex Chace</a>.
 	</div>
 </footer>
-
-<script>
-let anchorlinks = document.querySelectorAll('a[href^="#"]')
-
-for (let item of anchorlinks) { // relitere 
-item.addEventListener('click', (e)=> {
-    let hashval = item.getAttribute('href')
-    let target = document.querySelector(hashval)
-    target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-    })
-    e.preventDefault()
-})
-}
-</script>

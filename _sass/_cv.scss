@@ -1,9 +1,5 @@
 .heading, .section, { display: inline-block; }
 
-.heading {
-    
-}
-
 .contact {
     margin: 0;
     padding: 0;
@@ -57,33 +53,4 @@
     }
     border-radius: 0 0 $border-size/4 $border-size/4;
     &:last-child { border-bottom: 0px; }
-}
-
-.bibliography {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    list-style-type: none;
-    margin-left: 2px;
-    padding-left: 2px;
-    padding: 0 0 0 0;
-
-    li {
-        margin: 2px 0;
-        position: relative;
-        padding-bottom: 0;
-        font-size: 100%;
-        border-radius: 0 0 $border-size/4 $border-size/4;
-        &:last-child { border-bottom: 0px; }
-    }
-
-    a { text-decoration: none; }
-    
-    &:last-child { margin-bottom: $vertical-spacing-unit/4; }
-}
-
-.readmore {
-    text-align: right;
-    margin-left: 95%;
-    text-transform: lowercase;
-    font-weight: bold;
 }

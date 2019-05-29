@@ -1,9 +1,9 @@
 name_title: Morgan Tamayo
+phone: 678-799-6666
 email: mrgntamayo@gmail.com
 twitter: placeholder
 github: placeholder
-linkedin: placeholder
-blog: placeholder
+linkedin: morgan-tamayo
 bio: >-
   I'm a data scientist.
 
@@ -16,7 +16,7 @@ skills:
     - Excel
   methods:
     - Advanced Regression Binary Classification
-    - Data Minding
+    - Data Mining
     - K-means Clustering
 
 education:
