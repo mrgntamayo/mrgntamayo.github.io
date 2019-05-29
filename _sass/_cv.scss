@@ -7,15 +7,16 @@
     line-height: 1.5;
     .column {
         float: left;
-        width: 1.5em;
         padding: 0;
         margin: 0;
         vertical-align: middle;
     }
+    .icon { width: 7.5%; }
+    .data { width: 92.5%; }
     .fas, .fab {
         vertical-align: middle;
         text-align: left;
-        margin-top: 2.5px;
+        margin-top: $border-size;
     }
 }
 

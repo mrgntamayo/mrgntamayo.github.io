@@ -164,14 +164,17 @@ footer {
   line-height: 1.5; }
   .contact .column {
     float: left;
-    width: 1.5em;
     padding: 0;
     margin: 0;
     vertical-align: middle; }
+  .contact .icon {
+    width: 7.5%; }
+  .contact .data {
+    width: 92.5%; }
   .contact .fas, .contact .fab {
     vertical-align: middle;
     text-align: left;
-    margin-top: 2.5px; }
+    margin-top: 4px; }
 
 .bio {
   padding-bottom: 10px; }
