@@ -1,0 +1,11 @@
+---
+layout: page-list
+title: Blog Posts
+---
+
+
+<ul class="post-list">
+	{% for post in site.posts %}
+		<li style="text-align: center;"><h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}.</a></h3></li>
+	{% endfor %}
+</ul>

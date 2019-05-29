@@ -1,18 +1,5 @@
 ---
-layout: default
-links:
-  - title: "About"
-    url: "#about"
-  - title: "Education"
-    url: "#education"
-  - title: "Work"
-    url: "#employment"
-  - title: "Publications"
-    url: "#publications"
-  - title: "Teaching"
-    url: "#teaching"
-  - title: "Projects"
-    url: "#projects"
+layout: resume
 thumbnail: index.png
 ---
 

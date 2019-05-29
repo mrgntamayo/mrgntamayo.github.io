@@ -26,6 +26,11 @@ a:hover {
         background-color: $dark-color;
     }
 
+    .blog-content {
+        background-color: $light-color;
+        color: $dark-color;
+    }
+
     .sidebar {
         background-color: $theme-color;
         color: $light-color;
@@ -43,6 +48,8 @@ a:hover {
 }
 
 .heading { border-bottom: $border-size * 2 solid $dark-color; }
+
+.blog-heading { border-bottom: $border-size * 2 solid $dark-color; }
 
 .section { border-bottom: $border-size solid $dark-color; }
 
@@ -88,6 +95,11 @@ a:hover {
             color: $dark-color;
             border: solid 0px $dark-color;
             background-color: $dark-color;
+        }
+
+        .blog-content {
+            background-color: lighten($dark-color, 20%);
+            color: $light-color;
         }
 
         .sidebar {

@@ -13,9 +13,7 @@
         padding-right: $horizontal-spacing-unit;
         padding-top: 0px;
 
-        #lastsidehr {
-            display: none;
-        }
+        #lastsidehr { display: none; }
     }
 
     .main-content {
@@ -30,6 +28,13 @@
         padding-top: $border-size*2;
         margin-left: -$horizontal-spacing-unit;
         margin-right: -$horizontal-spacing-unit;
+    }
+
+    .blog-content {
+        flex: 100%;
+        padding-left: $horizontal-spacing-unit;
+        padding-right: $horizontal-spacing-unit;
+        padding-top: $vertical-spacing-unit*2;
     }
 }
 
