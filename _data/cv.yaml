@@ -6,7 +6,7 @@ twitter: mrgntamayo
 github: mrgntamayo
 linkedin: morgan-tamayo
 bio: >-
-    I'm a data scientist and graduate student in Applied Statistics at Kennesaw State University, but in my freetime I'm more likely to be found cooking the newest dishes and trying out the latest hot sauces.
+    I'm a data scientist, but in my freetime I'm more likely to be found cooking the newest dishes and trying out the latest hot sauces.
 
 skills:
   tools:
@@ -35,8 +35,15 @@ education:
       Describe your study here.
 
 jobs:
+  - title: Statistician
+    time: Dec 2019-Present
+    place: Epsilon, Atlanta, GA
+    tasks:
+      - Provided reoccurring market share/flowshare analytics to track video and broadband customer behavior.
+      - Wrote code in SAS to automate deliverable processes.
+      - Performed ad hoc analyses based on client needs.
   - title: Contractor/Graduate Assistant
-    time: May 2018-Present
+    time: May 2018-July 2019
     place: Blue Cross Blue Shield of Tennessee, Chattanooga, TN
     tasks:
       - Cleaned and modeled physician data in Python.
