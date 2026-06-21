@@ -1,0 +1,26 @@
+---
+import { cv } from "../data/site";
+import { svgIcon } from "../utils/icons";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+
+const links = [
+  { href: `https://www.linkedin.com/in/${cv.linkedin}`, label: "LinkedIn", svg: svgIcon(faLinkedinIn) },
+  { href: `https://github.com/${cv.github}`, label: "GitHub", svg: svgIcon(faGithub) },
+  { href: "/assets/cv.pdf", label: "Curriculum Vitae PDF", svg: svgIcon(faFilePdf) },
+];
+---
+
+<nav class="flex gap-2" aria-label="Profile links">
+  {
+    links.map((link) => (
+      <a
+        class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white text-slate-700 no-underline transition hover:border-blueprint/40 hover:text-blueprint"
+        href={link.href}
+        aria-label={link.label}
+      >
+        <Fragment set:html={link.svg} />
+      </a>
+    ))
+  }
+</nav>

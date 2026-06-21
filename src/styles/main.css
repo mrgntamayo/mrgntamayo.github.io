@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans Pro", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #172033;
+  --color-muted: #64748b;
+  --color-paper: #fffaf5;
+  --color-line: #d6cec2;
+  --color-panel: #ffffff;
+  --color-blueprint: #105d85;
+  --color-sea: #0f766e;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    @apply m-0 min-w-80 bg-paper text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-sea text-white;
+  }
+
+  a {
+    @apply underline-offset-4;
+  }
+
+  /* FontAwesome SVG baseline styles (replaces the FA stylesheet) */
+  .svg-inline--fa {
+    display: inline-block;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+  }
+}

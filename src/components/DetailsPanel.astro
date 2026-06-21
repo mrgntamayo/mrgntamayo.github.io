@@ -1,0 +1,61 @@
+---
+import { cv } from "../data/site";
+import DetailSection from "./DetailSection.astro";
+import { svgIcon } from "../utils/icons";
+import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+
+const contactItems = [
+  { svg: svgIcon(faLocationDot), label: cv.location },
+  { svg: svgIcon(faPhone), label: cv.phoneDisplay, href: `tel:${cv.phone}` },
+  { svg: svgIcon(faEnvelope), label: cv.email, href: `mailto:${cv.email}` },
+];
+---
+
+<div class="grid gap-6 border-b border-line pb-6 md:grid-cols-3">
+  <DetailSection title="Contact">
+    <ul class="space-y-3">
+      {
+        contactItems.map((item) => (
+          <li class="flex items-center gap-3 text-slate-700">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-blueprint shadow-sm ring-1 ring-line">
+              <Fragment set:html={item.svg} />
+            </span>
+            {item.href ? (
+              <a class="decoration-slate-300 transition hover:text-blueprint" href={item.href}>
+                {item.label}
+              </a>
+            ) : (
+              <span>{item.label}</span>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </DetailSection>
+
+  <DetailSection title="Education">
+    <div class="space-y-5">
+      {
+        cv.education.map((degree) => (
+          <div>
+            <h3 class="font-black text-slate-950">{degree.degree}</h3>
+            <p class="mt-1 text-slate-700">{degree.school}</p>
+            <p class="mt-1 text-sm font-semibold uppercase tracking-wide text-muted">{degree.time}</p>
+          </div>
+        ))
+      }
+    </div>
+  </DetailSection>
+
+  <DetailSection title="Skills">
+    <ul class="flex flex-wrap gap-2">
+      {
+        cv.skills.map((skill) => (
+          <li class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-line">
+            {skill}
+          </li>
+        ))
+      }
+    </ul>
+  </DetailSection>
+</div>

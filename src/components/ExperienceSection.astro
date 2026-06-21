@@ -1,0 +1,34 @@
+---
+import type { ExperienceGroup } from "../data/site";
+import RoleList from "./RoleList.astro";
+import TaskList from "./TaskList.astro";
+
+interface Props {
+  id: string;
+  title: string;
+  items: readonly ExperienceGroup[];
+}
+
+const { id, title, items } = Astro.props;
+---
+
+<section>
+  <h2 id={id} class="text-2xl font-black tracking-tight text-slate-950">{title}</h2>
+  <div class="mt-5 divide-y divide-line">
+    {
+      items.map((item) => (
+        <article class="grid gap-4 py-6 first:pt-0 md:grid-cols-5">
+          <div class="text-sm font-bold uppercase tracking-wide text-muted md:col-span-1">{item.time}</div>
+          <div class="md:col-span-4">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-lg font-black leading-tight text-slate-950">{item.employer}</h3>
+              <p class="text-slate-700">{item.location}</p>
+            </div>
+            <RoleList roles={item.roles} />
+            <TaskList tasks={item.tasks} class="mt-4 max-w-3xl space-y-2 text-slate-700" />
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

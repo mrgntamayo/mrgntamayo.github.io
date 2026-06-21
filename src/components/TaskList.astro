@@ -1,0 +1,18 @@
+---
+interface Props {
+  tasks: readonly string[];
+  class?: string;
+}
+const { tasks, class: className } = Astro.props;
+---
+
+<ul class={className}>
+  {
+    tasks.map((task) => (
+      <li class="flex gap-3 leading-7">
+        <span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-blueprint" aria-hidden="true" />
+        <span>{task}</span>
+      </li>
+    ))
+  }
+</ul>

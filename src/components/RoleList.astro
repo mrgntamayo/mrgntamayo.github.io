@@ -1,0 +1,24 @@
+---
+import type { ExperienceGroup } from "../data/site";
+
+interface Props {
+  roles: ExperienceGroup["roles"];
+}
+
+const { roles } = Astro.props;
+---
+
+{
+  roles.length === 1 ? (
+    <h4 class="mt-3 font-black text-slate-950">{roles[0].title}</h4>
+  ) : (
+    <div class="mt-3 divide-y divide-line border-y border-line">
+      {roles.map((role) => (
+        <div class="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between">
+          <h4 class="font-black text-slate-950">{role.title}</h4>
+          <p class="text-sm font-bold uppercase tracking-wide text-muted">{role.time}</p>
+        </div>
+      ))}
+    </div>
+  )
+}

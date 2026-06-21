@@ -1,0 +1,19 @@
+---
+import Layout from "../components/Layout.astro";
+import ProfilePanel from "../components/ProfilePanel.astro";
+import DetailsPanel from "../components/DetailsPanel.astro";
+import ExperienceSection from "../components/ExperienceSection.astro";
+import ResumeSection from "../components/ResumeSection.astro";
+import { cv } from "../data/site";
+---
+
+<Layout>
+  <div class="space-y-6">
+    <ProfilePanel />
+    <DetailsPanel />
+    <main class="space-y-8">
+      <ExperienceSection id="employment" title="Employment" items={cv.jobs} />
+      <ResumeSection id="projects" title="Projects" items={cv.projects} />
+    </main>
+  </div>
+</Layout>
